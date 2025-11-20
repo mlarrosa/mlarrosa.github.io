@@ -26,6 +26,98 @@ body {
 }
 
 
+
+/*--------------------------------------------------------------
+	Showcase Page
+--------------------------------------------------------------*/
+.content-box-title {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+	color: #111;
+	margin: 16px 0 15px;
+}
+
+
+
+	.showcase-page {
+		background-color: #f6f8f9;
+	}
+
+  .showcase-page .showcase-page-header {
+	  background-color: rgba(2, 2, 2, 0.7);
+	}
+  
+	.showcase-page .content-box {
+		display: block;
+		margin-bottom: 45px;
+		padding:0;
+	}
+	
+	.showcase-page .container {
+		max-width:98%;
+	}
+
+  .showcase-page .content-box .content-box-image {
+	max-height: 500px;
+	border-radius: 6px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+	margin-bottom: 25px;
+	transition: 0.35s ease-out;
+	-webkit-transition: 0.35s ease-out;
+	-moz-transition: 0.35s ease-out;
+  }
+  
+  .showcase-page .content-box .content-box-image:hover {
+	transform: translate3d(0, -10px, 0);
+	-webkit-transform: translate3d(0, -10px, 0);
+	box-shadow: 0 23px 40px rgba(0, 0, 0, 0.2);
+  }
+  .showcase-page .content-box .content-box-image img {
+	width: 100%;	
+}
+
+  .showcase-page .nav-tabs {
+	border:none;
+	justify-content: center;
+  }
+  .showcase-page .nav-tabs .nav-item .nav-link {
+	font-weight: bold;
+	cursor: pointer;
+	background-color: transparent;
+	border:none;
+  }
+  .showcase-page .nav-tabs .nav-item .nav-link:focus {
+	background-color: transparent;
+	border:none;
+  }
+  .showcase-page h1 {
+	  margin-bottom: 60px;
+	  text-align: center;
+	}
+	
+
+	.showcase-page .nav-item {
+		cursor: pointer;
+	}
+	.showcase-page .nav-pills {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.showcase-page .nav-pills .nav-link {
+		border:none;
+		cursor: pointer;
+		margin: 7px 5px;
+	}
+  
+  
+
+
 .mfp-iframe-holder .mfp-content {
     max-width:80% !important;
 }
