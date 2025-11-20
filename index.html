@@ -15,6 +15,7 @@
     
   <!-- jQuery -->
   <script src="js/jquery.min.js"></script>
+    
   <style>
 
     .landing-wireframes{opacity:0.3;left:50%;overflow:visible;pointer-events:none;position:absolute;top:0;}.landing-wireframe{position:absolute}.landing-wireframe svg g circle,.landing-wireframe svg g line,.landing-wireframe svg g path,.landing-wireframe svg g use{stroke-linecap:butt}.landing-logo-wireframe-alert{right:280px;top:186px}.landing-logo-wireframe-buttons{right:252px;top:32px}.landing-logo-wireframe-calendar{right:238px;top:389px}.landing-logo-wireframe-checkboxes{left:300px;top:434px}.landing-logo-wireframe-file-upload{left:3px;top:620px}.landing-logo-wireframe-input-groups{left:-197px;top:34px}.landing-logo-wireframe-inputs{left:130px;top:34px}.landing-logo-wireframe-labels{left:500px;top:150px}.landing-logo-wireframe-radios{left:300px;top:284px}.landing-logo-wireframe-select-menus{left:500px;top:30px}.landing-logo-wireframe-sliders{left:500px;top:300px}.landing-logo-wireframe-switches{left:300px;top:354px}.landing-logo-wireframe-time-selections{left:500px;top:450px}.landing-logo-wireframe-toggles{left:-201px;top:250px}html{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}body,html{background-color:#10161a}body{margin:0;padding:0}.landing-container{margin:0 auto;max-width:760px;padding:0 20px}header{background-color:transparent;height:630px;margin:0;overflow:hidden;position:relative;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}header .landing-container{bottom:0;left:0;position:absolute;right:0;top:0;pointer-events:none;z-index:0}header h1{clear:both;line-height:1.2;margin:330px auto 0}header h1,header h3{color:#fff;font-weight:400}header h3{margin-bottom:30px;margin-top:30px;opacity:.8}header .bp3-button.landing-button{color:hsla(0,0%,100%,.7);pointer-events:all;position:relative}header .bp3-button.landing-button:hover{background-color:hsla(0,0%,100%,.2);color:hsla(0,0%,100%,.7)}header .bp3-button.landing-button:active{background-color:hsla(0,0%,100%,.4);color:#fff}header .bp3-icon-dot{color:hsla(0,0%,100%,.5);margin:5px}header canvas{bottom:0;left:0;position:absolute;right:0;top:0}footer{background-color:transparent}.landing-about .landing-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-bottom:60px;padding-top:60px;text-align:center}.landing-about .landing-container>*{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0}.landing-about .landing-container>.bp3-fill{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1}.landing-about .landing-container:before,.landing-about .landing-container>*{margin-bottom:30px}.landing-about .landing-container:empty:before,.landing-about .landing-container>:last-child{margin-bottom:0}.landing-about img{width:60px}.landing-about p:first-of-type{font-size:16px}.landing-about p:last-of-type{font-weight:300}.landing-about .landing-separator{background-color:#394b59;height:2px;width:40px}.landing-copyright:before{background-image:-webkit-gradient(linear,left top, right top,from(hsla(0,0%,100%,0)),color-stop(50%, hsla(0,0%,100%,.3)),to(hsla(0,0%,100%,0)));background-image:linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.3) 50%,hsla(0,0%,100%,0));content:"";display:block;height:1px}.landing-copyright .landing-container{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:50px;padding:5px}@media (max-width:425px){header{height:800px}header h1{font-size:36px}header h3{font-size:18px;margin-bottom:25px}header .bp3-icon-dot{display:block}}@media (max-width:768px){.landing-copyright .landing-container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.landing-copyright .landing-button{margin:5px}}
@@ -46,29 +47,28 @@
             display:none !important;
         }
       }
+
+
+      #portfolio-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      /* Styling */
+      #portfolio-grid .box {
+        text-align: center;
+        padding: 10px;
+        border-radius: 3px;
+        height: 600px;
+        overflow: hidden;
+      }
+
+      #portfolio-grid .box:hover {
+        box-shadow: 2px 2px 2px solid black;
+        cursor: pointer;
+      }
     
-
-
-#portfolio-grid {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-/* Styling */
-#portfolio-grid .box {
-  text-align: center;
-  padding: 10px;
-  border-radius: 3px;
-  height: 600px;
-  overflow: hidden;
-}
-
-#portfolio-grid .box:hover {
-  box-shadow: 2px 2px 2px solid black;
-  cursor: pointer;
-}
-
       </style>
     
     
@@ -90,8 +90,8 @@
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<!-- Google Webfonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	
 
 	<!-- Animate.css -->
@@ -108,7 +108,7 @@
 
 
 	<!-- Web Fonts  -->
-	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&amp;display=swap" rel="stylesheet" type="text/css">
+	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
 
 <script type="text/javascript">
 	
@@ -1646,20 +1646,18 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 };
 </script>
 
-	<style type="text/css">.inspectlet-widget { position: fixed; height: 50px; width: 50px; background: #2c8aff; bottom: 20px; right: 20px; border-radius: 50px; box-shadow: 0 0 5px rgb(0 0 0 / 20%), 0 0 10px rgb(255 255 255 / 10%) inset; border: 2px solid rgb(38 132 234); display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all .25s ease; } .inspectlet-widget:hover{ opacity: .8; }
-
-.inspectlet-widget img{ height: 70%; width: 70%; }</style></head>
-	<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+	</head>
+	<body>
 	
-	<div id="top-header" class="active">
+	<div id="top-header">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-        	<a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=marcelolarrosaweb@gmail.com" title="" data-placement="top" data-toggle="tooltip" class="tooltips" target="_blank">
+        	<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=marcelolarrosaweb@gmail.com" title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" target="_blank" >
           		<i class="fa fa-envelope"></i>
       		</a>
 					<img id="logo-sticky" style="width:160px;" src="images/logo-blanco-sin-texto.svg">
-          	<a id="linkedin-link" href="https://linkedin.com/in/marcelo-larrosa/" title="" data-placement="top" data-toggle="tooltip" class="tooltips" target="_blank">
+          	<a id="linkedin-link" href="https://linkedin.com/in/marcelo-larrosa/" title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" target="_blank" >
         		<i class="fa fa-linkedin-square"></i>	            		
 					</a>
 				</div>
@@ -1669,8 +1667,8 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 	<div id="portfolio-page">
 		<div id="portfolio-wrap">
-			<div id="portfolio-hero" data-section="home" role="banner" style="background: #141E30;background: -webkit-linear-gradient(to bottom, #243B55, #141E30);background: linear-gradient(to bottom, #243B55, #141E30);">
-				<div id="particles-js"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1869" height="900"></canvas></div>
+			<div id="portfolio-hero" data-section="home" role="banner" style="background: #141E30;background: -webkit-linear-gradient(to bottom, #243B55, #141E30);background: linear-gradient(to bottom, #243B55, #141E30);" >
+				<div id="particles-js"></div>
 
     <div class="landing-wireframes"><div class="landing-wireframe landing-logo-wireframe-alert">
       <svg width="406" height="165" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -3187,7 +3185,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
       </div></div>
 
  
- <svg id="circle-animated" style="position: absolute; top: -30%; opacity: 0.7; height: 150%; width: 0px; transition: 0.8s;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 406.2 406.2" xml:space="preserve">
+ <svg id="circle-animated" style="position:absolute;top:-30%;opacity:0.7;height:150%;width:150%;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 406.2 406.2" xml:space="preserve">
  <style type="text/css">
      .st0{fill:#FFFFFF;}
      .st1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}
@@ -3221,27 +3219,27 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 
 
-        <a target="_blank" id="logo-grande-link" href="https://linkedin.com/in/marcelo-larrosa/" style="opacity: -3.37143; display: none;">
+        <a target="_blank" id="logo-grande-link" href="https://linkedin.com/in/marcelo-larrosa/">
           
-          <img id="logo-unido" src="images/logo-blanco-sin-texto-unido.svg" style="position: absolute; opacity: 1; transition: 4s;" alt="">
+          <img id="logo-unido" src="images/logo-blanco-sin-texto-unido.svg" style="position: absolute;" alt="">
 
-          <svg style="margin-top: 0px; opacity: 0; transition: 3s;" version="1.1" id="logo-svg-animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 715.1 428" xml:space="preserve">
+          <svg style="margin-top:0;" version="1.1" id="logo-svg-animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 715.1 428" xml:space="preserve">
           <style type="text/css">
           .st0{fill:transparent;stroke:#fff;stroke-miterlimit:10;}
           </style>
-          <path class="st0 PwIhgDwL_0" d="M204.4,140L204.4,356.3L287.9,356.3L287.9,266.8L351.8,330.7L351.8,211.5L280.3,140.1Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
-          <path class="st0 PwIhgDwL_1" d="M499.6,140L499.6,356.3L416.1,356.3L416.1,266.8L352.1,330.7L352.1,211.5L423.5,140.1Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
-          <path class="st0 PwIhgDwL_2" d="M310.3,319.2L310.3,378.3L204.4,378.3L204.4,420.3L351.8,420.3L351.8,360.4Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
-          <path class="st0 PwIhgDwL_3" d="M393.3,319.2L393.3,378.3L499.3,378.3L499.3,420.3L351.8,420.3L351.8,360.4Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
-          <path class="st0 PwIhgDwL_4" width="142" height="7.7" d="M5.6 412.5 L147.6 412.5 L147.6 420.2 L5.6 420.2 Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
-          <path class="st0 PwIhgDwL_5" width="142" height="7.7" d="M556.2 412.5 L698.2 412.5 L698.2 420.2 L556.2 420.2 Z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
+          <path class="st0 PwIhgDwL_0" d="M204.4,140L204.4,356.3L287.9,356.3L287.9,266.8L351.8,330.7L351.8,211.5L280.3,140.1Z"></path>
+          <path class="st0 PwIhgDwL_1" d="M499.6,140L499.6,356.3L416.1,356.3L416.1,266.8L352.1,330.7L352.1,211.5L423.5,140.1Z"></path>
+          <path class="st0 PwIhgDwL_2" d="M310.3,319.2L310.3,378.3L204.4,378.3L204.4,420.3L351.8,420.3L351.8,360.4Z"></path>
+          <path class="st0 PwIhgDwL_3" d="M393.3,319.2L393.3,378.3L499.3,378.3L499.3,420.3L351.8,420.3L351.8,360.4Z"></path>
+          <path class="st0 PwIhgDwL_4" width="142" height="7.7" d="M5.6 412.5 L147.6 412.5 L147.6 420.2 L5.6 420.2 Z"></path>
+          <path class="st0 PwIhgDwL_5" width="142" height="7.7" d="M556.2 412.5 L698.2 412.5 L698.2 420.2 L556.2 420.2 Z"></path>
           <path class="st0 PwIhgDwL_6" d="M328.5,93.4c0-12.8,10.3-23.2,23.1-23.4V6.7l-71.3,71.4h-76.1V118h85.3l62.1,62.1v-63.3
-          C338.8,116.6,328.5,106.2,328.5,93.4z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
+          C338.8,116.6,328.5,106.2,328.5,93.4z"></path>
           <path class="st0 PwIhgDwL_7" d="M423.4,78.5L351.8,6.7L351.7,70c0.1,0,0.1,0,0.2,0c12.9,0,23.4,10.5,23.4,23.4c0,12.9-10.5,23.4-23.4,23.4
-          c-0.1,0-0.2,0-0.2,0l-0.1,63.3l62.2-62.2h85.8V78.5H423.4z" style="fill: rgb(255, 255, 255); transition: 2.5s;"></path>
+          c-0.1,0-0.2,0-0.2,0l-0.1,63.3l62.2-62.2h85.8V78.5H423.4z"></path>
           <style data-made-with="vivus-instant">.PwIhgDwL_0{stroke-dasharray:776 778;stroke-dashoffset:777;animation:PwIhgDwL_draw_0 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_1{stroke-dasharray:777 779;stroke-dashoffset:778;animation:PwIhgDwL_draw_1 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_2{stroke-dasharray:473 475;stroke-dashoffset:474;animation:PwIhgDwL_draw_2 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_3{stroke-dasharray:473 475;stroke-dashoffset:474;animation:PwIhgDwL_draw_3 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_4{stroke-dasharray:300 302;stroke-dashoffset:301;animation:PwIhgDwL_draw_4 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_5{stroke-dasharray:300 302;stroke-dashoffset:301;animation:PwIhgDwL_draw_5 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_6{stroke-dasharray:590 592;stroke-dashoffset:591;animation:PwIhgDwL_draw_6 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_7{stroke-dasharray:592 594;stroke-dashoffset:593;animation:PwIhgDwL_draw_7 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}@keyframes PwIhgDwL_draw{100%{stroke-dashoffset:0;}}@keyframes PwIhgDwL_fade{0%{stroke-opacity:1;}92.5925925925926%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes PwIhgDwL_draw_0{0%{stroke-dashoffset: 777}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_1{0%{stroke-dashoffset: 778}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_2{0%{stroke-dashoffset: 474}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_3{0%{stroke-dashoffset: 474}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_4{0%{stroke-dashoffset: 301}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_5{0%{stroke-dashoffset: 301}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_6{0%{stroke-dashoffset: 591}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_7{0%{stroke-dashoffset: 593}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
 
-          <p id="ml-web-developer" style="display: block; opacity: 1; line-height: 1; margin-top: -20px; width: 100%; font-size: 60px; font-family: &quot;Forque&quot;; text-decoration: none; color: rgb(255, 255, 255); transform: translateY(30px); transition: 3s;">Marcelo Larrosa <br>Desarrollador web </p>
+          <p id="ml-web-developer" style="margin-top:-70px;display:block;opacity:0;line-height:1;margin-top:-20px;width:100%;font-size:60px;font-family:'Forque';text-decoration:none;color:#fff;">Marcelo Larrosa<br/> Web Developer</p>
 
         </a>
     </div>
@@ -3269,20 +3267,21 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 				
 				
 				<div id="about-me">
-					<section class="my-5 py-5 section section-no-border section-parallax bg-transparent custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax="" data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/resume/about-me/about-me-bg-1.jpg">
+					<section class="my-5 py-5 section section-no-border section-parallax bg-transparent custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/resume/about-me/about-me-bg-1.jpg">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-3 position-relative custom-sm-margin-bottom-1">
-									<img src="foto-io.jpg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt="">
+									<img src="foto-io.jpg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
 								</div>
 								<div class="col-lg-6 col-xl-5">
-									<h1 class="text-color-primary custom-font-size-1 mb-0">Marcelo Larrosa </h1>
+									<h1 class="text-color-primary custom-font-size-1 mb-0">Marcelo Larrosa</h1>
 									<span class="custom-about-me-infos">
 										<span class="custom-text-color-1 mt-3 mb-2">
-										    Ofrezco más de 7 años de experiencia como <strong> desarrollador web frontend. </strong>
-										    Durante ese tiempo he adquirido una amplia variedad de habilidades trabajando con diferentes tipos de sitios web y tecnologías. 
-										    Desde sitios web estáticos pequeños/medianos hasta sitios web de comercio electrónico muy grandes y complejos con contenido dinámico.
-									     </span>
+										    I offer 7+ years of experience as a <strong>Frontend Web Developer</strong>
+										    In that time I have acquired a wide variety of skills working with different types of websites and technologies. 
+										    From small/medium static sites, to very large and complex Ecommerce websites with dynamic content.
+									    </span>
+										<a id="resume-download" href="http://marcelolarrosaweb.com/Marcelo-resume_en_updated.pdf" class="btn btn-2 mt-3" target="_blank">Download Resume</a>
 									</span>
 								</div>
 							</div>
@@ -3297,7 +3296,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 				    <div class="container">
 						<div class="row">
 							<div class="col-md-12 portfolio-section-heading text-center">
-								<h2 class="portfolio-lead animated section-title">Experiencia </h2>
+								<h2 class="portfolio-lead animated section-title">Experience</h2>
 							</div>
 				    	</div>
 				    </div>
@@ -3309,80 +3308,80 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
 
 			        <div class="row">
-			          <div class="columns col-lg-9 aos-init aos-animate" data-aos="fade-up">
-			            <h3 class="resume-title">Activo  <span> - 9 months (Jan 2022 - Sep 2022) </span></h3>
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Activo <span> - 9 months (Jan 2022 - Sep 2022)</span></h3>
 			            <div class="resume-item">
-			              <h5><em>Desarrollador de WordPress </em></h5>
+			              <h5><em>Wordpress Developer</em></h5>
 			              <ul>
 			                <p>
-			                  Desarrollo de páginas de destino para promocionar el sitio web, los servicios y las ofertas de la empresa. Creación de contenido fácilmente editable mediante Elementor, códigos cortos personalizados y campos personalizados avanzados.
-			                 </p>
+			                  Development of landing pages promoting the company website, services and offers. Make the content to be easily editable making use of Elementor, custom Shortcodes and Advanced Custom Fields.
+			                </p>
 			              </ul>
 			            </div>
 			          </div>
 			            
-			          <div class="columns col-lg-9 aos-init aos-animate" data-aos="fade-up">
-			            <h3 class="resume-title">Muustack <span> - 7 meses (julio 2021 - enero 2022) </span></h3>
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Muustack <span> - 7 months (July 2021 - Jan 2022)</span></h3>
 			            <div class="resume-item">
-			              <h5><em>Desarrollador de WordPress </em></h5>
+			              <h5><em>Wordpress Developer</em></h5>
 			              <ul>
 			                <p>
-			                  Desarrollo de sitios web personalizados en WordPress para clientes, creando el tema desde cero con HTML, CSS, PHP, Bootstrap y JavaScript. Permitimos que el contenido sea dinámico mediante tipos de publicación personalizados y campos personalizados avanzados.
-			                 </p>
+			                  Development of custom Wordpress sites for clients, creating the theme from scratch with HTML, CSS, PHP, Bootstrap and Javascript. Allow the content to be dynamic using Custom Post Types and Advanced Custom Fields.
+			                </p>
 			              </ul>
 			            </div>
 			          </div>
 			            
-			          <div class="columns col-lg-9 aos-init aos-animate" data-aos="fade-up">
-			            <h3 class="resume-title">SuiteDB <span> - 8 meses (febrero de 2020 - octubre de 2020) </span></h3>
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">SuiteDB <span> - 8 months (Feb 2020 - Oct 2020)</span></h3>
 			            <div class="resume-item">
-			              <h5><em>Desarrollador de comercio electrónico de Oracle NetSuite </em></h5>
+			              <h5><em>Oracle NetSuite Ecommerce Developer</em></h5>
 			              <ul>
 			                <p>
-			                  SuiteDB es una empresa que también trabaja con NetSuite; mis tareas se centraron en el desarrollo de sitios web utilizando la tecnología SuiteCommerce Advanced de NetSuite, así como en la ejecución, optimización y despliegue de los sitios utilizando Gulp y NPM.
-			                 </p>
+			                  SuiteDB is a company that also works with NetSuite, my tasks were focused on developing websites by using Netsuite's SuiteCommerce Advanced technology, running, optimizing and deploying the sites using Gulp and NPM.
+			                </p>
 			              </ul>
 			            </div>
 			          </div>
 			            
-			          <div class="columns col-lg-9 aos-init aos-animate" data-aos="fade-up">
-			            <h3 class="resume-title">Equipo Tavano <span> - 4 años (2015 - 2019) </span></h3>
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Tavano Team <span> - 4 years (2015 - 2019)</span></h3>
 			            <div class="resume-item">
-			              <h5><em>Desarrollador de comercio electrónico de Oracle NetSuite </em></h5>
+			              <h5><em>Oracle NetSuite Ecommerce Developer</em></h5>
 			              <ul>
 			                <p>
-			                  Trabajar en el equipo de Tavano fue una experiencia excelente que me desafió a asumir responsabilidades. 
-			                  Llevé mis conocimientos y habilidades de diseño web al siguiente nivel. Tuve la increíble 
-			                  Oportunidad para aprender NetSuite, una de las plataformas CRM más importantes. 
-			                  en el mercado de comercio electrónico a nivel mundial.
-			                 </p>
-			                <li>Implementar un nuevo tema (plantilla), 
-			Dentro de NetSuite, eso se usaría para rediseñar todo el sitio web, mientras que el actual 
-			Una de ellas permanece publicada sin sufrir cambios indeseados. </li>
-			                <li>Modificar todos los estilos del sitio, basándose en las directrices estéticas definidas por la 
-			cliente. </li>
-			                <li>Investigar las funcionalidades e integrarlas en NetSuite para que funcionen. 
-			correctamente junto con las funcionalidades existentes y el código predeterminado de NetSuite. </li>
-			                <li>Crear y/o modificar, según sea el caso, elementos de diseño (modificar logotipo, banners, 
-			deslizadores, imágenes, secciones) siguiendo las mismas pautas estéticas ya presentes 
-			en la imagen corporativa de la empresa, y cambiarlas por otras, mientras que la 
-			El sitio web está en funcionamiento, en producción. </li>
-			                <li>Codifica scripts sencillos para el frontend de manera que la estructura visual se mantenga independientemente de las circunstancias. 
-			del contenido que se almacena en el backend de NetSuite. </li>
+			                  Working in Tavano Team was an excellent experience that challenged me to take 
+			                  my web design knowledge and skills to the next level. I had the amazing 
+			                  opportunity to learn NetSuite, one of the most important CRM platforms 
+			                  in the Ecommerce market worldwide.
+			                </p>
+			                <li>Implement a new Theme (template), 
+			within NetSuite, that would be used to redesign the entire website, while the current 
+			one remains published without suffering any unwanted changes. </li>
+			                <li>Modify all the styles of the site, based on the aesthetic guidelines defined by the 
+			client. </li>
+			                <li>Investigate functionalities and integrate them into NetSuite so that they work 
+			correctly alongside existing functionalities and NetSuite's default code.  </li>
+			                <li>Create and / or modify as the case may be, design elements (modify logo, banners, 
+			sliders, images, sections) following the same aesthetic guidelines already present 
+			in the corporate image of the company, and change them for others, while the 
+			site is live, in production. </li>
+			                <li>Code simple Frontend scripts so that the visual structure is maintained regardless 
+			of what content is populated on NetSuite's backend.</li>
 			              </ul>
 			            </div>
 			          </div>
 			          
-			          <div class="columns col-lg-9 aos-init aos-animate" data-aos="fade-up">
-			            <h3 class="resume-title">Solcre Technology Solutions <span> - 2 años (2013 - 2014) </span></h3>
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Solcre Technology Solutions <span> - 2 years (2013 - 2014)</span></h3>
 			            <div class="resume-item">
-			              <h5><em>Desarrollador Frontend </em></h5>
+			              <h5><em>Frontend Developer</em></h5>
 			              <ul>
-			                <li>Validación de código HTML y CSS y detección de errores. </li>
-			                <li>Utilizar plantillas para crear un sitio web según las necesidades del cliente. Utilizar el CMS. 
-			Desarrollado por la empresa Columnis. </li>
-			                <li>Programación básica con Javascript y jQuery. Depuración de errores. 
-			en guiones. </li>
+			                <li>Validation of HTML and CSS Code and finding errors.</li>
+			                <li>Use of templates to create website according to customer needs. Use the CMS 
+			developed by the company called Columnis.</li>
+			                <li>Basic programming with Javascript and jQuery. Debugging errors 
+			in scripts. </li>
 			              </ul>
 			            </div>
 			          </div>
@@ -3398,42 +3397,50 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 				    <div class="container">
 						<div class="row">
 							<div class="col-md-12 portfolio-section-heading text-center">
-								<h2 class="portfolio-lead animated section-title">Cartera </h2>
+								<h2 class="portfolio-lead animated section-title">Portfolio</h2>
 							</div>
 			        	</div>
 				    </div>
 				</div>
 
 			    
-			    
-        <div id="portfolio-features-2" data-section="design">
-          <div class="portfolio-features-2-content">
-              <div class="container">
 
-                <div id="portfolio-grid">
-                  <div class="box">
-                    <a target="_blank" href="images/dentist-02.png">
-                      <img src="images/dentist-02.png" alt="">
-                    </a>
-                  </div>
-                  <div class="box">
-                    <a target="_blank" href="images/dental-02.png">
-                      <img src="images/dental-02.png" alt="">
-                    </a>
-                  </div>
-                  <div class="box">
-                    <a target="_blank" href="images/dentista-health-wellness-02.png">
-                      <img src="images/dentista-health-wellness-02.png" alt="">
-                    </a>
-                  </div>
+			    
+			    
+			    <div id="portfolio-features-2" data-section="design">
+					<div class="portfolio-features-2-content">
+					    <div class="container">
+
+                <div id="portfolio-features-2" data-section="design">
+                  <div class="portfolio-features-2-content">
+                    <div class="container">
+
+                      <div id="portfolio-grid">
+                        <div class="box">
+                          <a target="_blank" href="images/dentist-02.png">
+                            <img src="images/dentist-02.png" alt="">
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a target="_blank" href="images/dental-02.png">
+                            <img src="images/dental-02.png" alt="">
+                          </a>
+                        </div>
+                        <div class="box">
+                          <a target="_blank" href="images/dentista-health-wellness-02.png">
+                            <img src="images/dentista-health-wellness-02.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>	
                 </div>
 
-
-              </div>
-          </div>	
-        </div>
-
-
+					    </div>
+					</div>	
+			    </div>
+			    
 			    
 			</div>
 		</div>
@@ -3444,9 +3451,9 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
     <section id="contact" class="contact">
       <div class="container">
         <div class="section-title">
-          <h2>¡Contáctame! </h2>
+          <h2>Contact Me!</h2>
         </div>
-        <div class="row aos-init" data-aos="fade-in">
+        <div class="row" data-aos="fade-in">
           <div class="col-lg-12 text-center">
             <div id="info-map-icons" class="col-lg-2">
               <div class="col-lg-12">
@@ -3457,7 +3464,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
             </div>
           </div>
         </div>
-      </div></section><!-- End Contact Section -->
+      </section><!-- End Contact Section -->
 		</footer>
 
 
