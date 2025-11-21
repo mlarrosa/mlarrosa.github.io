@@ -974,7 +974,6 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   }
   #info-container, #info-map-icons,
   .contact .col-lg-12 {
-    padding-right:0;
   }
 }
 
@@ -1293,3 +1292,4 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     margin-top:10px;
   }
 }
+
