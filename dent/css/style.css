@@ -627,7 +627,6 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 #info-container,
 #info-map-icons {
   display:inline-block;
-  padding-left:0;
 }
 
 #info-map-icons .col-lg-12 {
@@ -1292,4 +1291,5 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   #demo.btn, #code.btn {
     margin-top:10px;
   }
+
 }
