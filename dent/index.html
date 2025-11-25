@@ -1,0 +1,3637 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio Marcelo Larrosa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+    
+  <style>
+
+    .landing-wireframes{opacity:0.3;left:50%;overflow:visible;pointer-events:none;position:absolute;top:0;}.landing-wireframe{position:absolute}.landing-wireframe svg g circle,.landing-wireframe svg g line,.landing-wireframe svg g path,.landing-wireframe svg g use{stroke-linecap:butt}.landing-logo-wireframe-alert{right:280px;top:186px}.landing-logo-wireframe-buttons{right:252px;top:32px}.landing-logo-wireframe-calendar{right:238px;top:389px}.landing-logo-wireframe-checkboxes{left:300px;top:434px}.landing-logo-wireframe-file-upload{left:3px;top:620px}.landing-logo-wireframe-input-groups{left:-197px;top:34px}.landing-logo-wireframe-inputs{left:130px;top:34px}.landing-logo-wireframe-labels{left:500px;top:150px}.landing-logo-wireframe-radios{left:300px;top:284px}.landing-logo-wireframe-select-menus{left:500px;top:30px}.landing-logo-wireframe-sliders{left:500px;top:300px}.landing-logo-wireframe-switches{left:300px;top:354px}.landing-logo-wireframe-time-selections{left:500px;top:450px}.landing-logo-wireframe-toggles{left:-201px;top:250px}html{-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}body,html{background-color:#10161a}body{margin:0;padding:0}.landing-container{margin:0 auto;max-width:760px;padding:0 20px}header{background-color:transparent;height:630px;margin:0;overflow:hidden;position:relative;text-align:center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}header .landing-container{bottom:0;left:0;position:absolute;right:0;top:0;pointer-events:none;z-index:0}header h1{clear:both;line-height:1.2;margin:330px auto 0}header h1,header h3{color:#fff;font-weight:400}header h3{margin-bottom:30px;margin-top:30px;opacity:.8}header .bp3-button.landing-button{color:hsla(0,0%,100%,.7);pointer-events:all;position:relative}header .bp3-button.landing-button:hover{background-color:hsla(0,0%,100%,.2);color:hsla(0,0%,100%,.7)}header .bp3-button.landing-button:active{background-color:hsla(0,0%,100%,.4);color:#fff}header .bp3-icon-dot{color:hsla(0,0%,100%,.5);margin:5px}header canvas{bottom:0;left:0;position:absolute;right:0;top:0}footer{background-color:transparent}.landing-about .landing-container{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-bottom:60px;padding-top:60px;text-align:center}.landing-about .landing-container>*{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:0;flex-shrink:0}.landing-about .landing-container>.bp3-fill{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1}.landing-about .landing-container:before,.landing-about .landing-container>*{margin-bottom:30px}.landing-about .landing-container:empty:before,.landing-about .landing-container>:last-child{margin-bottom:0}.landing-about img{width:60px}.landing-about p:first-of-type{font-size:16px}.landing-about p:last-of-type{font-weight:300}.landing-about .landing-separator{background-color:#394b59;height:2px;width:40px}.landing-copyright:before{background-image:-webkit-gradient(linear,left top, right top,from(hsla(0,0%,100%,0)),color-stop(50%, hsla(0,0%,100%,.3)),to(hsla(0,0%,100%,0)));background-image:linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.3) 50%,hsla(0,0%,100%,0));content:"";display:block;height:1px}.landing-copyright .landing-container{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;min-height:50px;padding:5px}@media (max-width:425px){header{height:800px}header h1{font-size:36px}header h3{font-size:18px;margin-bottom:25px}header .bp3-icon-dot{display:block}}@media (max-width:768px){.landing-copyright .landing-container{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.landing-copyright .landing-button{margin:5px}}
+    
+      #logo-grande-link:hover {
+        text-decoration:none !important;
+      }
+      #portfolio-hero #logo-grande-link {
+        margin-top:-80px;
+      }
+      #logo-svg-animated {
+          width:500px;
+      }
+      #logo-unido {
+        opacity:0;
+        width:490px;
+      }
+
+      @media only screen and (max-width:760px){
+        #logo-svg-animated{
+            margin-top:50px !important;
+            width:300px;
+        }
+        #logo-unido {
+          width:295px;
+          margin-top:50px;
+        }
+        #ml-web-developer {
+            display:none !important;
+        }
+      }
+
+
+      #portfolio-grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      /* Styling */
+      #portfolio-grid .box {
+        text-align: center;
+        padding: 10px;
+        border-radius: 3px;
+        height: 600px;
+        overflow: hidden;
+      }
+
+      #portfolio-grid .box:hover {
+        box-shadow: 2px 2px 2px solid black;
+        cursor: pointer;
+      }
+    
+      </style>
+    
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+
+	<!-- Web Fonts  -->
+	<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400&display=swap" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+	
+var pJS = function(tag_id, params){
+
+  var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
+
+  /* particles.js variables with default values */
+  this.pJS = {
+    canvas: {
+      el: canvas_el,
+      w: canvas_el.offsetWidth,
+      h: canvas_el.offsetHeight
+    },
+    particles: {
+      number: {
+        value: 400,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      },
+      color: {
+        value: '#fff'
+      },
+      shape: {
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#ff0000'
+        },
+        polygon: {
+          nb_sides: 5
+        },
+        image: {
+          src: '',
+          width: 100,
+          height: 100
+        }
+      },
+      opacity: {
+        value: 1,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 2,
+          opacity_min: 0,
+          sync: false
+        }
+      },
+      size: {
+        value: 20,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 20,
+          size_min: 0,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 100,
+        color: '#fff',
+        opacity: 1,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 2,
+        direction: 'none',
+        random: false,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 3000,
+          rotateY: 3000
+        }
+      },
+      array: []
+    },
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'grab'
+        },
+        onclick: {
+          enable: true,
+          mode: 'push'
+        },
+        resize: true
+      },
+      modes: {
+        grab:{
+          distance: 100,
+          line_linked:{
+            opacity: 1
+          }
+        },
+        bubble:{
+          distance: 200,
+          size: 80,
+          duration: 0.4
+        },
+        repulse:{
+          distance: 200,
+          duration: 0.4
+        },
+        push:{
+          particles_nb: 4
+        },
+        remove:{
+          particles_nb: 2
+        }
+      },
+      mouse:{}
+    },
+    retina_detect: false,
+    fn: {
+      interact: {},
+      modes: {},
+      vendors:{}
+    },
+    tmp: {}
+  };
+
+  var pJS = this.pJS;
+
+  /* params settings */
+  if(params){
+    Object.deepExtend(pJS, params);
+  }
+
+  pJS.tmp.obj = {
+    size_value: pJS.particles.size.value,
+    size_anim_speed: pJS.particles.size.anim.speed,
+    move_speed: pJS.particles.move.speed,
+    line_linked_distance: pJS.particles.line_linked.distance,
+    line_linked_width: pJS.particles.line_linked.width,
+    mode_grab_distance: pJS.interactivity.modes.grab.distance,
+    mode_bubble_distance: pJS.interactivity.modes.bubble.distance,
+    mode_bubble_size: pJS.interactivity.modes.bubble.size,
+    mode_repulse_distance: pJS.interactivity.modes.repulse.distance
+  };
+
+
+  pJS.fn.retinaInit = function(){
+
+    if(pJS.retina_detect && window.devicePixelRatio > 1){
+      pJS.canvas.pxratio = window.devicePixelRatio; 
+      pJS.tmp.retina = true;
+    } 
+    else{
+      pJS.canvas.pxratio = 1;
+      pJS.tmp.retina = false;
+    }
+
+    pJS.canvas.w = pJS.canvas.el.offsetWidth * pJS.canvas.pxratio;
+    pJS.canvas.h = pJS.canvas.el.offsetHeight * pJS.canvas.pxratio;
+
+    pJS.particles.size.value = pJS.tmp.obj.size_value * pJS.canvas.pxratio;
+    pJS.particles.size.anim.speed = pJS.tmp.obj.size_anim_speed * pJS.canvas.pxratio;
+    pJS.particles.move.speed = pJS.tmp.obj.move_speed * pJS.canvas.pxratio;
+    pJS.particles.line_linked.distance = pJS.tmp.obj.line_linked_distance * pJS.canvas.pxratio;
+    pJS.interactivity.modes.grab.distance = pJS.tmp.obj.mode_grab_distance * pJS.canvas.pxratio;
+    pJS.interactivity.modes.bubble.distance = pJS.tmp.obj.mode_bubble_distance * pJS.canvas.pxratio;
+    pJS.particles.line_linked.width = pJS.tmp.obj.line_linked_width * pJS.canvas.pxratio;
+    pJS.interactivity.modes.bubble.size = pJS.tmp.obj.mode_bubble_size * pJS.canvas.pxratio;
+    pJS.interactivity.modes.repulse.distance = pJS.tmp.obj.mode_repulse_distance * pJS.canvas.pxratio;
+
+  };
+
+
+
+  /* ---------- pJS functions - canvas ------------ */
+
+  pJS.fn.canvasInit = function(){
+    pJS.canvas.ctx = pJS.canvas.el.getContext('2d');
+  };
+
+  pJS.fn.canvasSize = function(){
+
+    pJS.canvas.el.width = pJS.canvas.w;
+    pJS.canvas.el.height = pJS.canvas.h;
+
+    if(pJS && pJS.interactivity.events.resize){
+
+      window.addEventListener('resize', function(){
+
+          pJS.canvas.w = pJS.canvas.el.offsetWidth;
+          pJS.canvas.h = pJS.canvas.el.offsetHeight;
+
+          /* resize canvas */
+          if(pJS.tmp.retina){
+            pJS.canvas.w *= pJS.canvas.pxratio;
+            pJS.canvas.h *= pJS.canvas.pxratio;
+          }
+
+          pJS.canvas.el.width = pJS.canvas.w;
+          pJS.canvas.el.height = pJS.canvas.h;
+
+          /* repaint canvas on anim disabled */
+          if(!pJS.particles.move.enable){
+            pJS.fn.particlesEmpty();
+            pJS.fn.particlesCreate();
+            pJS.fn.particlesDraw();
+            pJS.fn.vendors.densityAutoParticles();
+          }
+
+        /* density particles enabled */
+        pJS.fn.vendors.densityAutoParticles();
+
+      });
+
+    }
+
+  };
+
+
+  pJS.fn.canvasPaint = function(){
+    pJS.canvas.ctx.fillRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+  };
+
+  pJS.fn.canvasClear = function(){
+    pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+  };
+
+
+  /* --------- pJS functions - particles ----------- */
+
+  pJS.fn.particle = function(color, opacity, position){
+
+    /* size */
+    this.radius = (pJS.particles.size.random ? Math.random() : 1) * pJS.particles.size.value;
+    if(pJS.particles.size.anim.enable){
+      this.size_status = false;
+      this.vs = pJS.particles.size.anim.speed / 100;
+      if(!pJS.particles.size.anim.sync){
+        this.vs = this.vs * Math.random();
+      }
+    }
+
+    /* position */
+    this.x = position ? position.x : Math.random() * pJS.canvas.w;
+    this.y = position ? position.y : Math.random() * pJS.canvas.h;
+
+    /* check position  - into the canvas */
+    if(this.x > pJS.canvas.w - this.radius*2) this.x = this.x - this.radius;
+    else if(this.x < this.radius*2) this.x = this.x + this.radius;
+    if(this.y > pJS.canvas.h - this.radius*2) this.y = this.y - this.radius;
+    else if(this.y < this.radius*2) this.y = this.y + this.radius;
+
+    /* check position - avoid overlap */
+    if(pJS.particles.move.bounce){
+      pJS.fn.vendors.checkOverlap(this, position);
+    }
+
+    /* color */
+    this.color = {};
+    if(typeof(color.value) == 'object'){
+
+      if(color.value instanceof Array){
+        var color_selected = color.value[Math.floor(Math.random() * pJS.particles.color.value.length)];
+        this.color.rgb = hexToRgb(color_selected);
+      }else{
+        if(color.value.r != undefined && color.value.g != undefined && color.value.b != undefined){
+          this.color.rgb = {
+            r: color.value.r,
+            g: color.value.g,
+            b: color.value.b
+          }
+        }
+        if(color.value.h != undefined && color.value.s != undefined && color.value.l != undefined){
+          this.color.hsl = {
+            h: color.value.h,
+            s: color.value.s,
+            l: color.value.l
+          }
+        }
+      }
+
+    }
+    else if(color.value == 'random'){
+      this.color.rgb = {
+        r: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
+        g: (Math.floor(Math.random() * (255 - 0 + 1)) + 0),
+        b: (Math.floor(Math.random() * (255 - 0 + 1)) + 0)
+      }
+    }
+    else if(typeof(color.value) == 'string'){
+      this.color = color;
+      this.color.rgb = hexToRgb(this.color.value);
+    }
+
+    /* opacity */
+    this.opacity = (pJS.particles.opacity.random ? Math.random() : 1) * pJS.particles.opacity.value;
+    if(pJS.particles.opacity.anim.enable){
+      this.opacity_status = false;
+      this.vo = pJS.particles.opacity.anim.speed / 100;
+      if(!pJS.particles.opacity.anim.sync){
+        this.vo = this.vo * Math.random();
+      }
+    }
+
+    /* animation - velocity for speed */
+    var velbase = {}
+    switch(pJS.particles.move.direction){
+      case 'top':
+        velbase = { x:0, y:-1 };
+      break;
+      case 'top-right':
+        velbase = { x:0.5, y:-0.5 };
+      break;
+      case 'right':
+        velbase = { x:1, y:-0 };
+      break;
+      case 'bottom-right':
+        velbase = { x:0.5, y:0.5 };
+      break;
+      case 'bottom':
+        velbase = { x:0, y:1 };
+      break;
+      case 'bottom-left':
+        velbase = { x:-0.5, y:1 };
+      break;
+      case 'left':
+        velbase = { x:-1, y:0 };
+      break;
+      case 'top-left':
+        velbase = { x:-0.5, y:-0.5 };
+      break;
+      default:
+        velbase = { x:0, y:0 };
+      break;
+    }
+
+    if(pJS.particles.move.straight){
+      this.vx = velbase.x;
+      this.vy = velbase.y;
+      if(pJS.particles.move.random){
+        this.vx = this.vx * (Math.random());
+        this.vy = this.vy * (Math.random());
+      }
+    }else{
+      this.vx = velbase.x + Math.random()-0.5;
+      this.vy = velbase.y + Math.random()-0.5;
+    }
+
+    // var theta = 2.0 * Math.PI * Math.random();
+    // this.vx = Math.cos(theta);
+    // this.vy = Math.sin(theta);
+
+    this.vx_i = this.vx;
+    this.vy_i = this.vy;
+
+    
+
+    /* if shape is image */
+
+    var shape_type = pJS.particles.shape.type;
+    if(typeof(shape_type) == 'object'){
+      if(shape_type instanceof Array){
+        var shape_selected = shape_type[Math.floor(Math.random() * shape_type.length)];
+        this.shape = shape_selected;
+      }
+    }else{
+      this.shape = shape_type;
+    }
+
+    if(this.shape == 'image'){
+      var sh = pJS.particles.shape;
+      this.img = {
+        src: sh.image.src,
+        ratio: sh.image.width / sh.image.height
+      }
+      if(!this.img.ratio) this.img.ratio = 1;
+      if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg != undefined){
+        pJS.fn.vendors.createSvgImg(this);
+        if(pJS.tmp.pushing){
+          this.img.loaded = false;
+        }
+      }
+    }
+
+    
+
+  };
+
+
+  pJS.fn.particle.prototype.draw = function() {
+
+    var p = this;
+
+    if(p.radius_bubble != undefined){
+      var radius = p.radius_bubble; 
+    }else{
+      var radius = p.radius;
+    }
+
+    if(p.opacity_bubble != undefined){
+      var opacity = p.opacity_bubble;
+    }else{
+      var opacity = p.opacity;
+    }
+
+    if(p.color.rgb){
+      var color_value = 'rgba('+p.color.rgb.r+','+p.color.rgb.g+','+p.color.rgb.b+','+opacity+')';
+    }else{
+      var color_value = 'hsla('+p.color.hsl.h+','+p.color.hsl.s+'%,'+p.color.hsl.l+'%,'+opacity+')';
+    }
+
+    pJS.canvas.ctx.fillStyle = color_value;
+    pJS.canvas.ctx.beginPath();
+
+    switch(p.shape){
+
+      case 'circle':
+        pJS.canvas.ctx.arc(p.x, p.y, radius, 0, Math.PI * 2, false);
+      break;
+
+      case 'edge':
+        pJS.canvas.ctx.rect(p.x-radius, p.y-radius, radius*2, radius*2);
+      break;
+
+      case 'triangle':
+        pJS.fn.vendors.drawShape(pJS.canvas.ctx, p.x-radius, p.y+radius / 1.66, radius*2, 3, 2);
+      break;
+
+      case 'polygon':
+        pJS.fn.vendors.drawShape(
+          pJS.canvas.ctx,
+          p.x - radius / (pJS.particles.shape.polygon.nb_sides/3.5), // startX
+          p.y - radius / (2.66/3.5), // startY
+          radius*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
+          pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
+          1 // sideCountDenominator
+        );
+      break;
+
+      case 'star':
+        pJS.fn.vendors.drawShape(
+          pJS.canvas.ctx,
+          p.x - radius*2 / (pJS.particles.shape.polygon.nb_sides/4), // startX
+          p.y - radius / (2*2.66/3.5), // startY
+          radius*2*2.66 / (pJS.particles.shape.polygon.nb_sides/3), // sideLength
+          pJS.particles.shape.polygon.nb_sides, // sideCountNumerator
+          2 // sideCountDenominator
+        );
+      break;
+
+      case 'image':
+
+        function draw(){
+          pJS.canvas.ctx.drawImage(
+            img_obj,
+            p.x-radius,
+            p.y-radius,
+            radius*2,
+            radius*2 / p.img.ratio
+          );
+        }
+
+        if(pJS.tmp.img_type == 'svg'){
+          var img_obj = p.img.obj;
+        }else{
+          var img_obj = pJS.tmp.img_obj;
+        }
+
+        if(img_obj){
+          draw();
+        }
+
+      break;
+
+    }
+
+    pJS.canvas.ctx.closePath();
+
+    if(pJS.particles.shape.stroke.width > 0){
+      pJS.canvas.ctx.strokeStyle = pJS.particles.shape.stroke.color;
+      pJS.canvas.ctx.lineWidth = pJS.particles.shape.stroke.width;
+      pJS.canvas.ctx.stroke();
+    }
+    
+    pJS.canvas.ctx.fill();
+    
+  };
+
+
+  pJS.fn.particlesCreate = function(){
+    for(var i = 0; i < pJS.particles.number.value; i++) {
+      pJS.particles.array.push(new pJS.fn.particle(pJS.particles.color, pJS.particles.opacity.value));
+    }
+  };
+
+  pJS.fn.particlesUpdate = function(){
+
+    for(var i = 0; i < pJS.particles.array.length; i++){
+
+      /* the particle */
+      var p = pJS.particles.array[i];
+
+      // var d = ( dx = pJS.interactivity.mouse.click_pos_x - p.x ) * dx + ( dy = pJS.interactivity.mouse.click_pos_y - p.y ) * dy;
+      // var f = -BANG_SIZE / d;
+      // if ( d < BANG_SIZE ) {
+      //     var t = Math.atan2( dy, dx );
+      //     p.vx = f * Math.cos(t);
+      //     p.vy = f * Math.sin(t);
+      // }
+
+      /* move the particle */
+      if(pJS.particles.move.enable){
+        var ms = pJS.particles.move.speed/2;
+        p.x += p.vx * ms;
+        p.y += p.vy * ms;
+      }
+
+      /* change opacity status */
+      if(pJS.particles.opacity.anim.enable) {
+        if(p.opacity_status == true) {
+          if(p.opacity >= pJS.particles.opacity.value) p.opacity_status = false;
+          p.opacity += p.vo;
+        }else {
+          if(p.opacity <= pJS.particles.opacity.anim.opacity_min) p.opacity_status = true;
+          p.opacity -= p.vo;
+        }
+        if(p.opacity < 0) p.opacity = 0;
+      }
+
+      /* change size */
+      if(pJS.particles.size.anim.enable){
+        if(p.size_status == true){
+          if(p.radius >= pJS.particles.size.value) p.size_status = false;
+          p.radius += p.vs;
+        }else{
+          if(p.radius <= pJS.particles.size.anim.size_min) p.size_status = true;
+          p.radius -= p.vs;
+        }
+        if(p.radius < 0) p.radius = 0;
+      }
+
+      /* change particle position if it is out of canvas */
+      if(pJS.particles.move.out_mode == 'bounce'){
+        var new_pos = {
+          x_left: p.radius,
+          x_right:  pJS.canvas.w,
+          y_top: p.radius,
+          y_bottom: pJS.canvas.h
+        }
+      }else{
+        var new_pos = {
+          x_left: -p.radius,
+          x_right: pJS.canvas.w + p.radius,
+          y_top: -p.radius,
+          y_bottom: pJS.canvas.h + p.radius
+        }
+      }
+
+      if(p.x - p.radius > pJS.canvas.w){
+        p.x = new_pos.x_left;
+        p.y = Math.random() * pJS.canvas.h;
+      }
+      else if(p.x + p.radius < 0){
+        p.x = new_pos.x_right;
+        p.y = Math.random() * pJS.canvas.h;
+      }
+      if(p.y - p.radius > pJS.canvas.h){
+        p.y = new_pos.y_top;
+        p.x = Math.random() * pJS.canvas.w;
+      }
+      else if(p.y + p.radius < 0){
+        p.y = new_pos.y_bottom;
+        p.x = Math.random() * pJS.canvas.w;
+      }
+
+      /* out of canvas modes */
+      switch(pJS.particles.move.out_mode){
+        case 'bounce':
+          if (p.x + p.radius > pJS.canvas.w) p.vx = -p.vx;
+          else if (p.x - p.radius < 0) p.vx = -p.vx;
+          if (p.y + p.radius > pJS.canvas.h) p.vy = -p.vy;
+          else if (p.y - p.radius < 0) p.vy = -p.vy;
+        break;
+      }
+
+      /* events */
+      if(isInArray('grab', pJS.interactivity.events.onhover.mode)){
+        pJS.fn.modes.grabParticle(p);
+      }
+
+      if(isInArray('bubble', pJS.interactivity.events.onhover.mode) || isInArray('bubble', pJS.interactivity.events.onclick.mode)){
+        pJS.fn.modes.bubbleParticle(p);
+      }
+
+      if(isInArray('repulse', pJS.interactivity.events.onhover.mode) || isInArray('repulse', pJS.interactivity.events.onclick.mode)){
+        pJS.fn.modes.repulseParticle(p);
+      }
+
+      /* interaction auto between particles */
+      if(pJS.particles.line_linked.enable || pJS.particles.move.attract.enable){
+        for(var j = i + 1; j < pJS.particles.array.length; j++){
+          var p2 = pJS.particles.array[j];
+
+          /* link particles */
+          if(pJS.particles.line_linked.enable){
+            pJS.fn.interact.linkParticles(p,p2);
+          }
+
+          /* attract particles */
+          if(pJS.particles.move.attract.enable){
+            pJS.fn.interact.attractParticles(p,p2);
+          }
+
+          /* bounce particles */
+          if(pJS.particles.move.bounce){
+            pJS.fn.interact.bounceParticles(p,p2);
+          }
+
+        }
+      }
+
+
+    }
+
+  };
+
+  pJS.fn.particlesDraw = function(){
+
+    /* clear canvas */
+    pJS.canvas.ctx.clearRect(0, 0, pJS.canvas.w, pJS.canvas.h);
+
+    /* update each particles param */
+    pJS.fn.particlesUpdate();
+
+    /* draw each particle */
+    for(var i = 0; i < pJS.particles.array.length; i++){
+      var p = pJS.particles.array[i];
+      p.draw();
+    }
+
+  };
+
+  pJS.fn.particlesEmpty = function(){
+    pJS.particles.array = [];
+  };
+
+  pJS.fn.particlesRefresh = function(){
+
+    /* init all */
+    cancelRequestAnimFrame(pJS.fn.checkAnimFrame);
+    cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+    pJS.tmp.source_svg = undefined;
+    pJS.tmp.img_obj = undefined;
+    pJS.tmp.count_svg = 0;
+    pJS.fn.particlesEmpty();
+    pJS.fn.canvasClear();
+    
+    /* restart */
+    pJS.fn.vendors.start();
+
+  };
+
+
+  /* ---------- pJS functions - particles interaction ------------ */
+
+  pJS.fn.interact.linkParticles = function(p1, p2){
+
+    var dx = p1.x - p2.x,
+        dy = p1.y - p2.y,
+        dist = Math.sqrt(dx*dx + dy*dy);
+
+    /* draw a line between p1 and p2 if the distance between them is under the config distance */
+    if(dist <= pJS.particles.line_linked.distance){
+
+      var opacity_line = pJS.particles.line_linked.opacity - (dist / (1/pJS.particles.line_linked.opacity)) / pJS.particles.line_linked.distance;
+
+      if(opacity_line > 0){        
+        
+        /* style */
+        var color_line = pJS.particles.line_linked.color_rgb_line;
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color_line.r+','+color_line.g+','+color_line.b+','+opacity_line+')';
+        pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
+        //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
+        
+        /* path */
+        pJS.canvas.ctx.beginPath();
+        pJS.canvas.ctx.moveTo(p1.x, p1.y);
+        pJS.canvas.ctx.lineTo(p2.x, p2.y);
+        pJS.canvas.ctx.stroke();
+        pJS.canvas.ctx.closePath();
+
+      }
+
+    }
+
+  };
+
+
+  pJS.fn.interact.attractParticles  = function(p1, p2){
+
+    /* condensed particles */
+    var dx = p1.x - p2.x,
+        dy = p1.y - p2.y,
+        dist = Math.sqrt(dx*dx + dy*dy);
+
+    if(dist <= pJS.particles.line_linked.distance){
+
+      var ax = dx/(pJS.particles.move.attract.rotateX*1000),
+          ay = dy/(pJS.particles.move.attract.rotateY*1000);
+
+      p1.vx -= ax;
+      p1.vy -= ay;
+
+      p2.vx += ax;
+      p2.vy += ay;
+
+    }
+    
+
+  }
+
+
+  pJS.fn.interact.bounceParticles = function(p1, p2){
+
+    var dx = p1.x - p2.x,
+        dy = p1.y - p2.y,
+        dist = Math.sqrt(dx*dx + dy*dy),
+        dist_p = p1.radius+p2.radius;
+
+    if(dist <= dist_p){
+      p1.vx = -p1.vx;
+      p1.vy = -p1.vy;
+
+      p2.vx = -p2.vx;
+      p2.vy = -p2.vy;
+    }
+
+  }
+
+
+  /* ---------- pJS functions - modes events ------------ */
+
+  pJS.fn.modes.pushParticles = function(nb, pos){
+
+    pJS.tmp.pushing = true;
+
+    for(var i = 0; i < nb; i++){
+      pJS.particles.array.push(
+        new pJS.fn.particle(
+          pJS.particles.color,
+          pJS.particles.opacity.value,
+          {
+            'x': pos ? pos.pos_x : Math.random() * pJS.canvas.w,
+            'y': pos ? pos.pos_y : Math.random() * pJS.canvas.h
+          }
+        )
+      )
+      if(i == nb-1){
+        if(!pJS.particles.move.enable){
+          pJS.fn.particlesDraw();
+        }
+        pJS.tmp.pushing = false;
+      }
+    }
+
+  };
+
+
+  pJS.fn.modes.removeParticles = function(nb){
+
+    pJS.particles.array.splice(0, nb);
+    if(!pJS.particles.move.enable){
+      pJS.fn.particlesDraw();
+    }
+
+  };
+
+
+  pJS.fn.modes.bubbleParticle = function(p){
+
+    /* on hover event */
+    if(pJS.interactivity.events.onhover.enable && isInArray('bubble', pJS.interactivity.events.onhover.mode)){
+
+      var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+          dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+          dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse),
+          ratio = 1 - dist_mouse / pJS.interactivity.modes.bubble.distance;
+
+      function init(){
+        p.opacity_bubble = p.opacity;
+        p.radius_bubble = p.radius;
+      }
+
+      /* mousemove - check ratio */
+      if(dist_mouse <= pJS.interactivity.modes.bubble.distance){
+
+        if(ratio >= 0 && pJS.interactivity.status == 'mousemove'){
+          
+          /* size */
+          if(pJS.interactivity.modes.bubble.size != pJS.particles.size.value){
+
+            if(pJS.interactivity.modes.bubble.size > pJS.particles.size.value){
+              var size = p.radius + (pJS.interactivity.modes.bubble.size*ratio);
+              if(size >= 0){
+                p.radius_bubble = size;
+              }
+            }else{
+              var dif = p.radius - pJS.interactivity.modes.bubble.size,
+                  size = p.radius - (dif*ratio);
+              if(size > 0){
+                p.radius_bubble = size;
+              }else{
+                p.radius_bubble = 0;
+              }
+            }
+
+          }
+
+          /* opacity */
+          if(pJS.interactivity.modes.bubble.opacity != pJS.particles.opacity.value){
+
+            if(pJS.interactivity.modes.bubble.opacity > pJS.particles.opacity.value){
+              var opacity = pJS.interactivity.modes.bubble.opacity*ratio;
+              if(opacity > p.opacity && opacity <= pJS.interactivity.modes.bubble.opacity){
+                p.opacity_bubble = opacity;
+              }
+            }else{
+              var opacity = p.opacity - (pJS.particles.opacity.value-pJS.interactivity.modes.bubble.opacity)*ratio;
+              if(opacity < p.opacity && opacity >= pJS.interactivity.modes.bubble.opacity){
+                p.opacity_bubble = opacity;
+              }
+            }
+
+          }
+
+        }
+
+      }else{
+        init();
+      }
+
+
+      /* mouseleave */
+      if(pJS.interactivity.status == 'mouseleave'){
+        init();
+      }
+    
+    }
+
+    /* on click event */
+    else if(pJS.interactivity.events.onclick.enable && isInArray('bubble', pJS.interactivity.events.onclick.mode)){
+
+
+      if(pJS.tmp.bubble_clicking){
+        var dx_mouse = p.x - pJS.interactivity.mouse.click_pos_x,
+            dy_mouse = p.y - pJS.interactivity.mouse.click_pos_y,
+            dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse),
+            time_spent = (new Date().getTime() - pJS.interactivity.mouse.click_time)/1000;
+
+        if(time_spent > pJS.interactivity.modes.bubble.duration){
+          pJS.tmp.bubble_duration_end = true;
+        }
+
+        if(time_spent > pJS.interactivity.modes.bubble.duration*2){
+          pJS.tmp.bubble_clicking = false;
+          pJS.tmp.bubble_duration_end = false;
+        }
+      }
+
+
+      function process(bubble_param, particles_param, p_obj_bubble, p_obj, id){
+
+        if(bubble_param != particles_param){
+
+          if(!pJS.tmp.bubble_duration_end){
+            if(dist_mouse <= pJS.interactivity.modes.bubble.distance){
+              if(p_obj_bubble != undefined) var obj = p_obj_bubble;
+              else var obj = p_obj;
+              if(obj != bubble_param){
+                var value = p_obj - (time_spent * (p_obj - bubble_param) / pJS.interactivity.modes.bubble.duration);
+                if(id == 'size') p.radius_bubble = value;
+                if(id == 'opacity') p.opacity_bubble = value;
+              }
+            }else{
+              if(id == 'size') p.radius_bubble = undefined;
+              if(id == 'opacity') p.opacity_bubble = undefined;
+            }
+          }else{
+            if(p_obj_bubble != undefined){
+              var value_tmp = p_obj - (time_spent * (p_obj - bubble_param) / pJS.interactivity.modes.bubble.duration),
+                  dif = bubble_param - value_tmp;
+                  value = bubble_param + dif;
+              if(id == 'size') p.radius_bubble = value;
+              if(id == 'opacity') p.opacity_bubble = value;
+            }
+          }
+
+        }
+
+      }
+
+      if(pJS.tmp.bubble_clicking){
+        /* size */
+        process(pJS.interactivity.modes.bubble.size, pJS.particles.size.value, p.radius_bubble, p.radius, 'size');
+        /* opacity */
+        process(pJS.interactivity.modes.bubble.opacity, pJS.particles.opacity.value, p.opacity_bubble, p.opacity, 'opacity');
+      }
+
+    }
+
+  };
+
+
+  pJS.fn.modes.repulseParticle = function(p){
+
+    if(pJS.interactivity.events.onhover.enable && isInArray('repulse', pJS.interactivity.events.onhover.mode) && pJS.interactivity.status == 'mousemove') {
+
+      var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+          dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+          dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
+
+      var normVec = {x: dx_mouse/dist_mouse, y: dy_mouse/dist_mouse},
+          repulseRadius = pJS.interactivity.modes.repulse.distance,
+          velocity = 100,
+          repulseFactor = clamp((1/repulseRadius)*(-1*Math.pow(dist_mouse/repulseRadius,2)+1)*repulseRadius*velocity, 0, 50);
+      
+      var pos = {
+        x: p.x + normVec.x * repulseFactor,
+        y: p.y + normVec.y * repulseFactor
+      }
+
+      if(pJS.particles.move.out_mode == 'bounce'){
+        if(pos.x - p.radius > 0 && pos.x + p.radius < pJS.canvas.w) p.x = pos.x;
+        if(pos.y - p.radius > 0 && pos.y + p.radius < pJS.canvas.h) p.y = pos.y;
+      }else{
+        p.x = pos.x;
+        p.y = pos.y;
+      }
+    
+    }
+
+
+    else if(pJS.interactivity.events.onclick.enable && isInArray('repulse', pJS.interactivity.events.onclick.mode)) {
+
+      if(!pJS.tmp.repulse_finish){
+        pJS.tmp.repulse_count++;
+        if(pJS.tmp.repulse_count == pJS.particles.array.length){
+          pJS.tmp.repulse_finish = true;
+        }
+      }
+
+      if(pJS.tmp.repulse_clicking){
+
+        var repulseRadius = Math.pow(pJS.interactivity.modes.repulse.distance/6, 3);
+
+        var dx = pJS.interactivity.mouse.click_pos_x - p.x,
+            dy = pJS.interactivity.mouse.click_pos_y - p.y,
+            d = dx*dx + dy*dy;
+
+        var force = -repulseRadius / d * 1;
+
+        function process(){
+
+          var f = Math.atan2(dy,dx);
+          p.vx = force * Math.cos(f);
+          p.vy = force * Math.sin(f);
+
+          if(pJS.particles.move.out_mode == 'bounce'){
+            var pos = {
+              x: p.x + p.vx,
+              y: p.y + p.vy
+            }
+            if (pos.x + p.radius > pJS.canvas.w) p.vx = -p.vx;
+            else if (pos.x - p.radius < 0) p.vx = -p.vx;
+            if (pos.y + p.radius > pJS.canvas.h) p.vy = -p.vy;
+            else if (pos.y - p.radius < 0) p.vy = -p.vy;
+          }
+
+        }
+
+        // default
+        if(d <= repulseRadius){
+          process();
+        }
+
+        // bang - slow motion mode
+        // if(!pJS.tmp.repulse_finish){
+        //   if(d <= repulseRadius){
+        //     process();
+        //   }
+        // }else{
+        //   process();
+        // }
+        
+
+      }else{
+
+        if(pJS.tmp.repulse_clicking == false){
+
+          p.vx = p.vx_i;
+          p.vy = p.vy_i;
+        
+        }
+
+      }
+
+    }
+
+  }
+
+
+  pJS.fn.modes.grabParticle = function(p){
+
+    if(pJS.interactivity.events.onhover.enable && pJS.interactivity.status == 'mousemove'){
+
+      var dx_mouse = p.x - pJS.interactivity.mouse.pos_x,
+          dy_mouse = p.y - pJS.interactivity.mouse.pos_y,
+          dist_mouse = Math.sqrt(dx_mouse*dx_mouse + dy_mouse*dy_mouse);
+
+      /* draw a line between the cursor and the particle if the distance between them is under the config distance */
+      if(dist_mouse <= pJS.interactivity.modes.grab.distance){
+
+        var opacity_line = pJS.interactivity.modes.grab.line_linked.opacity - (dist_mouse / (1/pJS.interactivity.modes.grab.line_linked.opacity)) / pJS.interactivity.modes.grab.distance;
+
+        if(opacity_line > 0){
+
+          /* style */
+          var color_line = pJS.particles.line_linked.color_rgb_line;
+          pJS.canvas.ctx.strokeStyle = 'rgba('+251+','+195+','+94+','+opacity_line+')';
+          pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
+          //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
+          
+          /* path */
+          pJS.canvas.ctx.beginPath();
+          pJS.canvas.ctx.moveTo(p.x, p.y);
+          pJS.canvas.ctx.lineTo(pJS.interactivity.mouse.pos_x, pJS.interactivity.mouse.pos_y);
+          pJS.canvas.ctx.stroke();
+          pJS.canvas.ctx.closePath();
+
+        }
+
+      }
+
+    }
+
+  };
+
+
+
+  /* ---------- pJS functions - vendors ------------ */
+
+  pJS.fn.vendors.eventsListeners = function(){
+
+    /* events target element */
+    if(pJS.interactivity.detect_on == 'window'){
+      pJS.interactivity.el = window;
+    }else{
+      pJS.interactivity.el = pJS.canvas.el;
+    }
+
+
+    /* detect mouse pos - on hover / click event */
+    if(pJS.interactivity.events.onhover.enable || pJS.interactivity.events.onclick.enable){
+
+      /* el on mousemove */
+      pJS.interactivity.el.addEventListener('mousemove', function(e){
+
+        if(pJS.interactivity.el == window){
+          var pos_x = e.clientX,
+              pos_y = e.clientY;
+        }
+        else{
+          var pos_x = e.offsetX || e.clientX,
+              pos_y = e.offsetY || e.clientY;
+        }
+
+        pJS.interactivity.mouse.pos_x = pos_x;
+        pJS.interactivity.mouse.pos_y = pos_y;
+
+        if(pJS.tmp.retina){
+          pJS.interactivity.mouse.pos_x *= pJS.canvas.pxratio;
+          pJS.interactivity.mouse.pos_y *= pJS.canvas.pxratio;
+        }
+
+        pJS.interactivity.status = 'mousemove';
+
+      });
+
+      /* el on onmouseleave */
+      pJS.interactivity.el.addEventListener('mouseleave', function(e){
+
+        pJS.interactivity.mouse.pos_x = null;
+        pJS.interactivity.mouse.pos_y = null;
+        pJS.interactivity.status = 'mouseleave';
+
+      });
+
+    }
+
+    /* on click event */
+    if(pJS.interactivity.events.onclick.enable){
+
+      pJS.interactivity.el.addEventListener('click', function(){
+
+        pJS.interactivity.mouse.click_pos_x = pJS.interactivity.mouse.pos_x;
+        pJS.interactivity.mouse.click_pos_y = pJS.interactivity.mouse.pos_y;
+        pJS.interactivity.mouse.click_time = new Date().getTime();
+
+        if(pJS.interactivity.events.onclick.enable){
+
+          switch(pJS.interactivity.events.onclick.mode){
+
+            case 'push':
+              if(pJS.particles.move.enable){
+                pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb, pJS.interactivity.mouse);
+              }else{
+                if(pJS.interactivity.modes.push.particles_nb == 1){
+                  pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb, pJS.interactivity.mouse);
+                }
+                else if(pJS.interactivity.modes.push.particles_nb > 1){
+                  pJS.fn.modes.pushParticles(pJS.interactivity.modes.push.particles_nb);
+                }
+              }
+            break;
+
+            case 'remove':
+              pJS.fn.modes.removeParticles(pJS.interactivity.modes.remove.particles_nb);
+            break;
+
+            case 'bubble':
+              pJS.tmp.bubble_clicking = true;
+            break;
+
+            case 'repulse':
+              pJS.tmp.repulse_clicking = true;
+              pJS.tmp.repulse_count = 0;
+              pJS.tmp.repulse_finish = false;
+              setTimeout(function(){
+                pJS.tmp.repulse_clicking = false;
+              }, pJS.interactivity.modes.repulse.duration*1000)
+            break;
+
+          }
+
+        }
+
+      });
+        
+    }
+
+
+  };
+
+  pJS.fn.vendors.densityAutoParticles = function(){
+
+    if(pJS.particles.number.density.enable){
+
+      /* calc area */
+      var area = pJS.canvas.el.width * pJS.canvas.el.height / 1000;
+      if(pJS.tmp.retina){
+        area = area/(pJS.canvas.pxratio*2);
+      }
+
+      /* calc number of particles based on density area */
+      var nb_particles = area * pJS.particles.number.value / pJS.particles.number.density.value_area;
+
+      /* add or remove X particles */
+      var missing_particles = pJS.particles.array.length - nb_particles;
+      if(missing_particles < 0) pJS.fn.modes.pushParticles(Math.abs(missing_particles));
+      else pJS.fn.modes.removeParticles(missing_particles);
+
+    }
+
+  };
+
+
+  pJS.fn.vendors.checkOverlap = function(p1, position){
+    for(var i = 0; i < pJS.particles.array.length; i++){
+      var p2 = pJS.particles.array[i];
+
+      var dx = p1.x - p2.x,
+          dy = p1.y - p2.y,
+          dist = Math.sqrt(dx*dx + dy*dy);
+
+      if(dist <= p1.radius + p2.radius){
+        p1.x = position ? position.x : Math.random() * pJS.canvas.w;
+        p1.y = position ? position.y : Math.random() * pJS.canvas.h;
+        pJS.fn.vendors.checkOverlap(p1);
+      }
+    }
+  };
+
+
+  pJS.fn.vendors.createSvgImg = function(p){
+
+    /* set color to svg element */
+    var svgXml = pJS.tmp.source_svg,
+        rgbHex = /#([0-9A-F]{3,6})/gi,
+        coloredSvgXml = svgXml.replace(rgbHex, function (m, r, g, b) {
+          if(p.color.rgb){
+            var color_value = 'rgba('+p.color.rgb.r+','+p.color.rgb.g+','+p.color.rgb.b+','+p.opacity+')';
+          }else{
+            var color_value = 'hsla('+p.color.hsl.h+','+p.color.hsl.s+'%,'+p.color.hsl.l+'%,'+p.opacity+')';
+          }
+          return color_value;
+        });
+
+    /* prepare to create img with colored svg */
+    var svg = new Blob([coloredSvgXml], {type: 'image/svg+xml;charset=utf-8'}),
+        DOMURL = window.URL || window.webkitURL || window,
+        url = DOMURL.createObjectURL(svg);
+
+    /* create particle img obj */
+    var img = new Image();
+    img.addEventListener('load', function(){
+      p.img.obj = img;
+      p.img.loaded = true;
+      DOMURL.revokeObjectURL(url);
+      pJS.tmp.count_svg++;
+    });
+    img.src = url;
+
+  };
+
+
+  pJS.fn.vendors.destroypJS = function(){
+    cancelAnimationFrame(pJS.fn.drawAnimFrame);
+    canvas_el.remove();
+    pJSDom = null;
+  };
+
+
+  pJS.fn.vendors.drawShape = function(c, startX, startY, sideLength, sideCountNumerator, sideCountDenominator){
+
+    // By Programming Thomas - https://programmingthomas.wordpress.com/2013/04/03/n-sided-shapes/
+    var sideCount = sideCountNumerator * sideCountDenominator;
+    var decimalSides = sideCountNumerator / sideCountDenominator;
+    var interiorAngleDegrees = (180 * (decimalSides - 2)) / decimalSides;
+    var interiorAngle = Math.PI - Math.PI * interiorAngleDegrees / 180; // convert to radians
+    c.save();
+    c.beginPath();
+    c.translate(startX, startY);
+    c.moveTo(0,0);
+    for (var i = 0; i < sideCount; i++) {
+      c.lineTo(sideLength,0);
+      c.translate(sideLength,0);
+      c.rotate(interiorAngle);
+    }
+    //c.stroke();
+    c.fill();
+    c.restore();
+
+  };
+
+  pJS.fn.vendors.exportImg = function(){
+    window.open(pJS.canvas.el.toDataURL('image/png'), '_blank');
+  };
+
+
+  pJS.fn.vendors.loadImg = function(type){
+
+    pJS.tmp.img_error = undefined;
+
+    if(pJS.particles.shape.image.src != ''){
+
+      if(type == 'svg'){
+
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', pJS.particles.shape.image.src);
+        xhr.onreadystatechange = function (data) {
+          if(xhr.readyState == 4){
+            if(xhr.status == 200){
+              pJS.tmp.source_svg = data.currentTarget.response;
+              pJS.fn.vendors.checkBeforeDraw();
+            }else{
+              console.log('Error pJS - Image not found');
+              pJS.tmp.img_error = true;
+            }
+          }
+        }
+        xhr.send();
+
+      }else{
+
+        var img = new Image();
+        img.addEventListener('load', function(){
+          pJS.tmp.img_obj = img;
+          pJS.fn.vendors.checkBeforeDraw();
+        });
+        img.src = pJS.particles.shape.image.src;
+
+      }
+
+    }else{
+      console.log('Error pJS - No image.src');
+      pJS.tmp.img_error = true;
+    }
+
+  };
+
+
+  pJS.fn.vendors.draw = function(){
+
+    if(pJS.particles.shape.type == 'image'){
+
+      if(pJS.tmp.img_type == 'svg'){
+
+        if(pJS.tmp.count_svg >= pJS.particles.number.value){
+          pJS.fn.particlesDraw();
+          if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+          else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+        }else{
+          //console.log('still loading...');
+          if(!pJS.tmp.img_error) pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+        }
+
+      }else{
+
+        if(pJS.tmp.img_obj != undefined){
+          pJS.fn.particlesDraw();
+          if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+          else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+        }else{
+          if(!pJS.tmp.img_error) pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+        }
+
+      }
+
+    }else{
+      pJS.fn.particlesDraw();
+      if(!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
+      else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
+    }
+
+  };
+
+
+  pJS.fn.vendors.checkBeforeDraw = function(){
+
+    // if shape is image
+    if(pJS.particles.shape.type == 'image'){
+
+      if(pJS.tmp.img_type == 'svg' && pJS.tmp.source_svg == undefined){
+        pJS.tmp.checkAnimFrame = requestAnimFrame(check);
+      }else{
+        //console.log('images loaded! cancel check');
+        cancelRequestAnimFrame(pJS.tmp.checkAnimFrame);
+        if(!pJS.tmp.img_error){
+          pJS.fn.vendors.init();
+          pJS.fn.vendors.draw();
+        }
+        
+      }
+
+    }else{
+      pJS.fn.vendors.init();
+      pJS.fn.vendors.draw();
+    }
+
+  };
+
+
+  pJS.fn.vendors.init = function(){
+
+    /* init canvas + particles */
+    pJS.fn.retinaInit();
+    pJS.fn.canvasInit();
+    pJS.fn.canvasSize();
+    pJS.fn.canvasPaint();
+    pJS.fn.particlesCreate();
+    pJS.fn.vendors.densityAutoParticles();
+
+    /* particles.line_linked - convert hex colors to rgb */
+    pJS.particles.line_linked.color_rgb_line = hexToRgb(pJS.particles.line_linked.color);
+
+  };
+
+
+  pJS.fn.vendors.start = function(){
+
+    if(isInArray('image', pJS.particles.shape.type)){
+      pJS.tmp.img_type = pJS.particles.shape.image.src.substr(pJS.particles.shape.image.src.length - 3);
+      pJS.fn.vendors.loadImg(pJS.tmp.img_type);
+    }else{
+      pJS.fn.vendors.checkBeforeDraw();
+    }
+
+  };
+
+
+
+
+  /* ---------- pJS - start ------------ */
+
+
+  pJS.fn.vendors.eventsListeners();
+
+  pJS.fn.vendors.start();
+  
+
+
+};
+
+/* ---------- global functions - vendors ------------ */
+
+Object.deepExtend = function(destination, source) {
+  for (var property in source) {
+    if (source[property] && source[property].constructor &&
+     source[property].constructor === Object) {
+      destination[property] = destination[property] || {};
+      arguments.callee(destination[property], source[property]);
+    } else {
+      destination[property] = source[property];
+    }
+  }
+  return destination;
+};
+
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame    ||
+    window.oRequestAnimationFrame      ||
+    window.msRequestAnimationFrame     ||
+    function(callback){
+      window.setTimeout(callback, 1000 / 60);
+    };
+})();
+
+window.cancelRequestAnimFrame = ( function() {
+  return window.cancelAnimationFrame         ||
+    window.webkitCancelRequestAnimationFrame ||
+    window.mozCancelRequestAnimationFrame    ||
+    window.oCancelRequestAnimationFrame      ||
+    window.msCancelRequestAnimationFrame     ||
+    clearTimeout
+} )();
+
+function hexToRgb(hex){
+  // By Tim Down - http://stackoverflow.com/a/5624139/3493650
+  // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
+  var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+  hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+     return r + r + g + g + b + b;
+  });
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+  } : null;
+};
+
+function clamp(number, min, max) {
+  return Math.min(Math.max(number, min), max);
+};
+
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
+
+
+/* ---------- particles.js functions - start ------------ */
+
+window.pJSDom = [];
+
+window.particlesJS = function(tag_id, params){
+
+  //console.log(params);
+
+  /* no string id? so it's object params, and set the id with default id */
+  if(typeof(tag_id) != 'string'){
+    params = tag_id;
+    tag_id = 'particles-js';
+  }
+
+  /* no id? set the id to default id */
+  if(!tag_id){
+    tag_id = 'particles-js';
+  }
+
+  /* pJS elements */
+  var pJS_tag = document.getElementById(tag_id),
+      pJS_canvas_class = 'particles-js-canvas-el',
+      exist_canvas = pJS_tag.getElementsByClassName(pJS_canvas_class);
+
+  /* remove canvas if exists into the pJS target tag */
+  if(exist_canvas.length){
+    while(exist_canvas.length > 0){
+      pJS_tag.removeChild(exist_canvas[0]);
+    }
+  }
+
+  /* create canvas element */
+  var canvas_el = document.createElement('canvas');
+  canvas_el.className = pJS_canvas_class;
+
+  /* set size canvas */
+  canvas_el.style.width = "100%";
+  canvas_el.style.height = "100%";
+
+  /* append canvas */
+  var canvas = document.getElementById(tag_id).appendChild(canvas_el);
+
+  /* launch particle.js */
+  if(canvas != null){
+    pJSDom.push(new pJS(tag_id, params));
+  }
+
+};
+
+window.particlesJS.load = function(tag_id, path_config_json, callback){
+
+  /* load json config */
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', path_config_json);
+  xhr.onreadystatechange = function (data) {
+    if(xhr.readyState == 4){
+      if(xhr.status == 200){
+        var params = JSON.parse(data.currentTarget.response);
+        window.particlesJS(tag_id, params);
+        if(callback) callback();
+      }else{
+        console.log('Error pJS - XMLHttpRequest status: '+xhr.status);
+        console.log('Error pJS - File config not found');
+      }
+    }
+  };
+  xhr.send();
+
+};
+</script>
+
+	</head>
+	<body>
+	
+	<div id="top-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+        	<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=marcelolarrosaweb@gmail.com" title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" target="_blank" >
+          		<i class="fa fa-envelope"></i>
+      		</a>
+					<img id="logo-sticky" style="width:160px;" src="images/logo-blanco-sin-texto.svg">
+          	<a id="linkedin-link" href="https://linkedin.com/in/marcelo-larrosa/" title="" data-placement="top" data-toggle="tooltip" class="tooltips" href="" target="_blank" >
+        		<i class="fa fa-linkedin-square"></i>	            		
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="portfolio-page">
+		<div id="portfolio-wrap">
+			<div id="portfolio-hero" data-section="home" role="banner" style="background: #141E30;background: -webkit-linear-gradient(to bottom, #243B55, #141E30);background: linear-gradient(to bottom, #243B55, #141E30);" >
+				<div id="particles-js"></div>
+
+    <div class="landing-wireframes"><div class="landing-wireframe landing-logo-wireframe-alert">
+      <svg width="406" height="165" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+      <rect id="alert-a" x="16" y="13" width="371" height="143" rx="10"></rect>
+      <mask id="alert-i" x="0" y="0" width="371" height="143" fill="#fff">
+      <use xlink:href="#alert-a"></use>
+      </mask>
+      <circle id="alert-b" cx="17" cy="14" r="6"></circle>
+      <mask id="alert-j" x="0" y="0" width="12" height="12" fill="#fff">
+      <use xlink:href="#alert-b"></use>
+      </mask>
+      <circle id="alert-c" cx="17" cy="155" r="6"></circle>
+      <mask id="alert-k" x="0" y="0" width="12" height="12" fill="#fff">
+      <use xlink:href="#alert-c"></use>
+      </mask>
+      <circle id="alert-d" cx="386" cy="155" r="6"></circle>
+      <mask id="alert-l" x="0" y="0" width="12" height="12" fill="#fff">
+      <use xlink:href="#alert-d"></use>
+      </mask>
+      <circle id="alert-e" cx="386" cy="14" r="6"></circle>
+      <mask id="alert-m" x="0" y="0" width="12" height="12" fill="#fff">
+      <use xlink:href="#alert-e"></use>
+      </mask>
+      <path d="M57.72 38.98c-.36-.58-.98-.98-1.72-.98s-1.36.42-1.7 1L40.28 62.98c-.16.32-.28.64-.28 1.02 0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2 0-.36-.12-.7-.3-1L57.72 38.98zM54 62v-4h4v4h-4zm0-6V46h4v10h-4z" id="alert-f"></path>
+      <mask id="alert-n" x="-2" y="-2" width="36" height="32">
+      <path fill="#fff" d="M38 36h36v32H38z"></path>
+      <use xlink:href="#alert-f"></use>
+      </mask>
+      <path d="M195 102.994a3 3 0 0 1 3.004-2.994h54.992a3 3 0 0 1 3.004 2.994v23.012a3 3 0 0 1-3.004 2.994h-54.992a3 3 0 0 1-3.004-2.994v-23.012z" id="alert-g"></path>
+      <mask id="alert-o" x="0" y="0" width="61" height="29" fill="#fff">
+      <use xlink:href="#alert-g"></use>
+      </mask>
+      <rect id="alert-h" x="266" y="100" width="96" height="29" rx="3"></rect>
+      <mask id="alert-p" x="0" y="0" width="96" height="29" fill="#fff">
+      <use xlink:href="#alert-h"></use>
+      </mask>
+      </defs>
+      <g fill="none" fill-rule="evenodd" opacity=".1">
+      <g stroke="#FFF">
+      <g>
+      <g opacity=".8">
+      <g>
+      <use mask="url(#alert-i)" stroke-width="4" opacity=".4" xlink:href="#alert-a"></use>
+      <path d="M.5 14h401M17 0v164.5M386 0v164.5M2.5 155h403" stroke-opacity=".5" stroke-width="2"></path>
+      <use mask="url(#alert-j)" stroke-width="2" opacity=".3" xlink:href="#alert-b"></use>
+      <use mask="url(#alert-k)" stroke-width="2" opacity=".3" xlink:href="#alert-c"></use>
+      <use mask="url(#alert-l)" stroke-width="2" opacity=".3" xlink:href="#alert-d"></use>
+      <use mask="url(#alert-m)" stroke-width="2" opacity=".3" xlink:href="#alert-e"></use>
+      <use mask="url(#alert-n)" stroke-width="4" xlink:href="#alert-f"></use>
+      <use mask="url(#alert-o)" stroke-width="4" xlink:href="#alert-g"></use>
+      <use mask="url(#alert-p)" stroke-width="4" xlink:href="#alert-h"></use>
+      <path d="M95 48.5h235m-235 20h145" stroke-width="5" stroke-linecap="square"></path>
+      <path d="M208 114.5h35m34.5 0H347" stroke-width="3" stroke-linecap="square"></path>
+      </g>
+      </g>
+      </g>
+      </g>
+      </g>
+    </svg>
+
+
+      </div><div class="landing-wireframe landing-logo-wireframe-buttons"><svg width="454" height="115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="buttons-a" x="6" y="7" width="111" height="31" rx="3"></rect>
+              <mask id="buttons-I" x="0" y="0" width="111" height="31" fill="#fff">
+                  <use xlink:href="#buttons-a"></use>
+              </mask>
+              <circle id="buttons-b" cx="7" cy="8" r="4"></circle>
+              <mask id="buttons-J" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-b"></use>
+              </mask>
+              <circle id="buttons-c" cx="7" cy="37" r="4"></circle>
+              <mask id="buttons-K" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-c"></use>
+              </mask>
+              <circle id="buttons-d" cx="116" cy="37" r="4"></circle>
+              <mask id="buttons-L" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-d"></use>
+              </mask>
+              <circle id="buttons-e" cx="116" cy="8" r="4"></circle>
+              <mask id="buttons-M" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-e"></use>
+              </mask>
+              <rect id="buttons-f" x="9" y="7" width="111" height="31" rx="3"></rect>
+              <mask id="buttons-N" x="0" y="0" width="111" height="31" fill="#fff">
+                  <use xlink:href="#buttons-f"></use>
+              </mask>
+              <path d="M108 19c-.28 0-.53.11-.71.29L104 22.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 108 19z" id="buttons-g"></path>
+              <mask id="buttons-O" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#buttons-g"></use>
+              </mask>
+              <circle id="buttons-h" cx="10" cy="8" r="4"></circle>
+              <mask id="buttons-P" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-h"></use>
+              </mask>
+              <circle id="buttons-i" cx="10" cy="37" r="4"></circle>
+              <mask id="buttons-Q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-i"></use>
+              </mask>
+              <circle id="buttons-j" cx="119" cy="37" r="4"></circle>
+              <mask id="buttons-R" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-j"></use>
+              </mask>
+              <circle id="buttons-k" cx="119" cy="8" r="4"></circle>
+              <mask id="buttons-S" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-k"></use>
+              </mask>
+              <rect id="buttons-l" x="9" y="7" width="131" height="31" rx="3"></rect>
+              <mask id="buttons-T" x="0" y="0" width="131" height="31" fill="#fff">
+                  <use xlink:href="#buttons-l"></use>
+              </mask>
+              <circle id="buttons-m" cx="10" cy="8" r="4"></circle>
+              <mask id="buttons-U" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-m"></use>
+              </mask>
+              <circle id="buttons-n" cx="10" cy="37" r="4"></circle>
+              <mask id="buttons-V" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-n"></use>
+              </mask>
+              <circle id="buttons-o" cx="139" cy="37" r="4"></circle>
+              <mask id="buttons-W" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-o"></use>
+              </mask>
+              <circle id="buttons-p" cx="139" cy="8" r="4"></circle>
+              <mask id="buttons-X" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#buttons-p"></use>
+              </mask>
+              <path d="M30 21h-2v-2c0-.55-.45-1-1-1s-1 .45-1 1v2h-2c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1v-2h2c.55 0 1-.45 1-1s-.45-1-1-1zm-3-7c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" id="buttons-q"></path>
+              <mask id="buttons-Y" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#buttons-q"></use>
+              </mask>
+              <rect id="buttons-r" x="6" y="7" width="121" height="41" rx="3"></rect>
+              <mask id="buttons-Z" x="0" y="0" width="121" height="41" fill="#fff">
+                  <use xlink:href="#buttons-r"></use>
+              </mask>
+              <circle id="buttons-s" cx="7" cy="8" r="5"></circle>
+              <mask id="buttons-aa" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-s"></use>
+              </mask>
+              <circle id="buttons-t" cx="7" cy="47" r="5"></circle>
+              <mask id="buttons-ab" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-t"></use>
+              </mask>
+              <circle id="buttons-u" cx="126" cy="47" r="5"></circle>
+              <mask id="buttons-ac" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-u"></use>
+              </mask>
+              <circle id="buttons-v" cx="126" cy="8" r="5"></circle>
+              <mask id="buttons-ad" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-v"></use>
+              </mask>
+              <rect id="buttons-w" x="9" y="7" width="121" height="41" rx="3"></rect>
+              <mask id="buttons-ae" x="0" y="0" width="121" height="41" fill="#fff">
+                  <use xlink:href="#buttons-w"></use>
+              </mask>
+              <path d="M113 24c-.28 0-.53.11-.71.29L109 27.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 113 24z" id="buttons-x"></path>
+              <mask id="buttons-af" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#buttons-x"></use>
+              </mask>
+              <circle id="buttons-y" cx="10" cy="8" r="5"></circle>
+              <mask id="buttons-ag" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-y"></use>
+              </mask>
+              <circle id="buttons-z" cx="10" cy="47" r="5"></circle>
+              <mask id="buttons-ah" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-z"></use>
+              </mask>
+              <circle id="buttons-A" cx="129" cy="47" r="5"></circle>
+              <mask id="buttons-ai" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-A"></use>
+              </mask>
+              <circle id="buttons-B" cx="129" cy="8" r="5"></circle>
+              <mask id="buttons-aj" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-B"></use>
+              </mask>
+              <rect id="buttons-C" x="9" y="7" width="141" height="41" rx="3"></rect>
+              <mask id="buttons-ak" x="0" y="0" width="141" height="41" fill="#fff">
+                  <use xlink:href="#buttons-C"></use>
+              </mask>
+              <circle id="buttons-D" cx="10" cy="8" r="5"></circle>
+              <mask id="buttons-al" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-D"></use>
+              </mask>
+              <circle id="buttons-E" cx="10" cy="47" r="5"></circle>
+              <mask id="buttons-am" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-E"></use>
+              </mask>
+              <circle id="buttons-F" cx="149" cy="47" r="5"></circle>
+              <mask id="buttons-an" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-F"></use>
+              </mask>
+              <circle id="buttons-G" cx="149" cy="8" r="5"></circle>
+              <mask id="buttons-ao" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#buttons-G"></use>
+              </mask>
+              <path d="M35 26h-2v-2c0-.55-.45-1-1-1s-1 .45-1 1v2h-2c-.55 0-1 .45-1 1s.45 1 1 1h2v2c0 .55.45 1 1 1s1-.45 1-1v-2h2c.55 0 1-.45 1-1s-.45-1-1-1zm-3-7c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" id="buttons-H"></path>
+              <mask id="buttons-ap" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#buttons-H"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <g>
+                                  <use mask="url(#buttons-I)" stroke-width="4" opacity=".4" xlink:href="#buttons-a"></use>
+                                  <path d="M7 0v44M116 2v42M0 8h124M1 37h121" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-J)" stroke-width="2" opacity=".4" xlink:href="#buttons-b"></use>
+                                  <use mask="url(#buttons-K)" stroke-width="2" opacity=".4" xlink:href="#buttons-c"></use>
+                                  <use mask="url(#buttons-L)" stroke-width="2" opacity=".4" xlink:href="#buttons-d"></use>
+                                  <use mask="url(#buttons-M)" stroke-width="2" opacity=".4" xlink:href="#buttons-e"></use>
+                                  <path d="M20.5 22.5H103" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(147)">
+                                  <use mask="url(#buttons-N)" stroke-width="4" opacity=".4" xlink:href="#buttons-f"></use>
+                                  <path d="M10 0v44M119 2v42M90 2v42M0 8h124M0 37h124" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-O)" stroke-width="4" xlink:href="#buttons-g"></use>
+                                  <use mask="url(#buttons-P)" stroke-width="2" opacity=".4" xlink:href="#buttons-h"></use>
+                                  <use mask="url(#buttons-Q)" stroke-width="2" opacity=".4" xlink:href="#buttons-i"></use>
+                                  <use mask="url(#buttons-R)" stroke-width="2" opacity=".4" xlink:href="#buttons-j"></use>
+                                  <use mask="url(#buttons-S)" stroke-width="2" opacity=".4" xlink:href="#buttons-k"></use>
+                                  <path d="M21.5 22.5H74" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(297)">
+                                  <use mask="url(#buttons-T)" stroke-width="4" opacity=".4" xlink:href="#buttons-l"></use>
+                                  <path d="M10 0v44M139 2v42M0 8h144M2 37h141" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-U)" stroke-width="2" opacity=".4" xlink:href="#buttons-m"></use>
+                                  <use mask="url(#buttons-V)" stroke-width="2" opacity=".4" xlink:href="#buttons-n"></use>
+                                  <use mask="url(#buttons-W)" stroke-width="2" opacity=".4" xlink:href="#buttons-o"></use>
+                                  <use mask="url(#buttons-X)" stroke-width="2" opacity=".4" xlink:href="#buttons-p"></use>
+                                  <path d="M42.5 22.5H125" stroke-width="3" stroke-linecap="square"></path>
+                                  <use mask="url(#buttons-Y)" stroke-width="4" xlink:href="#buttons-q"></use>
+                              </g>
+                              <g transform="translate(0 61)">
+                                  <use mask="url(#buttons-Z)" stroke-width="4" opacity=".4" xlink:href="#buttons-r"></use>
+                                  <path d="M7 0v54M126 2v52M0 8h134M2 47h131" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-aa)" stroke-width="2" opacity=".4" xlink:href="#buttons-s"></use>
+                                  <use mask="url(#buttons-ab)" stroke-width="2" opacity=".4" xlink:href="#buttons-t"></use>
+                                  <use mask="url(#buttons-ac)" stroke-width="2" opacity=".4" xlink:href="#buttons-u"></use>
+                                  <use mask="url(#buttons-ad)" stroke-width="2" opacity=".4" xlink:href="#buttons-v"></use>
+                                  <path d="M20.5 27.5H111" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(147 61)">
+                                  <use mask="url(#buttons-ae)" stroke-width="4" opacity=".4" xlink:href="#buttons-w"></use>
+                                  <path d="M10 0v54M129 2v52M90 2v52M0 8h134" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-af)" stroke-width="4" xlink:href="#buttons-x"></use>
+                                  <path d="M2 47h133" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-ag)" stroke-width="2" opacity=".4" xlink:href="#buttons-y"></use>
+                                  <use mask="url(#buttons-ah)" stroke-width="2" opacity=".4" xlink:href="#buttons-z"></use>
+                                  <use mask="url(#buttons-ai)" stroke-width="2" opacity=".4" xlink:href="#buttons-A"></use>
+                                  <use mask="url(#buttons-aj)" stroke-width="2" opacity=".4" xlink:href="#buttons-B"></use>
+                                  <path d="M21.5 27.5H74" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(297 61)">
+                                  <use mask="url(#buttons-ak)" stroke-width="4" opacity=".4" xlink:href="#buttons-C"></use>
+                                  <path d="M10 0v54M149 2v52M0 8h157M2 47h154" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#buttons-al)" stroke-width="2" opacity=".4" xlink:href="#buttons-D"></use>
+                                  <use mask="url(#buttons-am)" stroke-width="2" opacity=".4" xlink:href="#buttons-E"></use>
+                                  <use mask="url(#buttons-an)" stroke-width="2" opacity=".4" xlink:href="#buttons-F"></use>
+                                  <use mask="url(#buttons-ao)" stroke-width="2" opacity=".4" xlink:href="#buttons-G"></use>
+                                  <path d="M52 27.5h82" stroke-width="3" stroke-linecap="square"></path>
+                                  <use mask="url(#buttons-ap)" stroke-width="4" xlink:href="#buttons-H"></use>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-calendar"><svg width="475" height="293" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <path id="calendar-a" d="M13 10h451v274H13z"></path>
+              <mask id="calendar-j" x="0" y="0" width="451" height="274" fill="#fff">
+                  <use xlink:href="#calendar-a"></use>
+              </mask>
+              <circle id="calendar-b" cx="14" cy="11" r="6"></circle>
+              <mask id="calendar-k" x="0" y="0" width="12" height="12" fill="#fff">
+                  <use xlink:href="#calendar-b"></use>
+              </mask>
+              <circle id="calendar-c" cx="14" cy="283" r="6"></circle>
+              <mask id="calendar-l" x="0" y="0" width="12" height="12" fill="#fff">
+                  <use xlink:href="#calendar-c"></use>
+              </mask>
+              <circle id="calendar-d" cx="463" cy="282" r="6"></circle>
+              <mask id="calendar-m" x="0" y="0" width="12" height="12" fill="#fff">
+                  <use xlink:href="#calendar-d"></use>
+              </mask>
+              <circle id="calendar-e" cx="463" cy="11" r="6"></circle>
+              <mask id="calendar-n" x="0" y="0" width="12" height="12" fill="#fff">
+                  <use xlink:href="#calendar-e"></use>
+              </mask>
+              <path d="M32.42 42l3.29-3.29a1.003 1.003 0 0 0-1.42-1.42l-4 4c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L32.42 42z" id="calendar-f"></path>
+              <mask id="calendar-o" x="0" y="0" width="6" height="10" fill="#fff">
+                  <use xlink:href="#calendar-f"></use>
+              </mask>
+              <path d="M446.42 42l3.29-3.29a1.003 1.003 0 0 0-1.42-1.42l-4 4c-.18.18-.29.43-.29.71 0 .28.11.53.29.71l4 4a1.003 1.003 0 0 0 1.42-1.42L446.42 42z" id="calendar-g"></path>
+              <mask id="calendar-p" x="0" y="0" width="6" height="10" fill="#fff">
+                  <use xlink:href="#calendar-g"></use>
+              </mask>
+              <path d="M113 154c0-1.657 1.347-3 3-3h24c1.657 0 3 1.347 3 3v24a3 3 0 0 1-3.002 3H116c-1.657 0-3-1.347-3-3v-24z" id="calendar-h"></path>
+              <mask id="calendar-q" x="0" y="0" width="30" height="30" fill="#fff">
+                  <use xlink:href="#calendar-h"></use>
+              </mask>
+              <path id="calendar-i" d="M243 181h30v30h-30z"></path>
+              <mask id="calendar-r" x="0" y="0" width="30" height="30" fill="#fff">
+                  <use xlink:href="#calendar-i"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <use mask="url(#calendar-j)" stroke-width="4" opacity=".4" xlink:href="#calendar-a"></use>
+                              <path d="M14 0v292.5M.5 11h473M.5 11h463M3.5 283h471M463 0v292.5" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#calendar-k)" stroke-width="2" opacity=".4" xlink:href="#calendar-b"></use>
+                              <use mask="url(#calendar-l)" stroke-width="2" opacity=".4" xlink:href="#calendar-c"></use>
+                              <use mask="url(#calendar-m)" stroke-width="2" opacity=".4" xlink:href="#calendar-d"></use>
+                              <use mask="url(#calendar-n)" stroke-width="2" opacity=".4" xlink:href="#calendar-e"></use>
+                              <path d="M99 41.5h64m154 0h64" stroke-width="5" stroke-linecap="square"></path>
+                              <use mask="url(#calendar-o)" stroke-width="4" xlink:href="#calendar-f"></use>
+                              <use mask="url(#calendar-p)" stroke-width="4" transform="rotate(-180 447 42)" xlink:href="#calendar-g"></use>
+                              <g stroke-width="4" stroke-linecap="square">
+                                  <path d="M44 76H32m42 0H62m42 0H92m42 0h-12m42 0h-12m42 0h-12m42 0h-12"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 106H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 136H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 166H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 196H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 226H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M43 256H33m40 0H63m40 0H93m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="4" stroke-linecap="square">
+                                  <path d="M264 76h-12m42 0h-12m42 0h-12m42 0h-12m42 0h-12m42 0h-12m42 0h-12"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 106h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 136h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 166h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 196h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 226h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <g stroke-width="2" stroke-linecap="square">
+                                  <path d="M263 256h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10m40 0h-10"></path>
+                              </g>
+                              <use mask="url(#calendar-q)" stroke-width="4" xlink:href="#calendar-h"></use>
+                              <use mask="url(#calendar-r)" stroke-width="4" xlink:href="#calendar-i"></use>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-checkboxes"><svg width="168" height="77" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <path id="checkboxes-a" d="M0 .977h16v16H0z"></path>
+              <mask id="checkboxes-f" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#checkboxes-a"></use>
+              </mask>
+              <path id="checkboxes-b" d="M0 30.977h16v16H0z"></path>
+              <mask id="checkboxes-g" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#checkboxes-b"></use>
+              </mask>
+              <path d="M12 36c-.28 0-.53.11-.71.29L7 40.58l-2.29-2.29a1.003 1.003 0 0 0-1.42 1.42l3 3c.18.18.43.29.71.29.28 0 .53-.11.71-.29l5-5A1.003 1.003 0 0 0 12 36z" id="checkboxes-c"></path>
+              <mask id="checkboxes-h" x="0" y="0" width="10" height="7" fill="#fff">
+                  <use xlink:href="#checkboxes-c"></use>
+              </mask>
+              <path id="checkboxes-d" d="M0 60.977h16v16H0z"></path>
+              <mask id="checkboxes-i" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#checkboxes-d"></use>
+              </mask>
+              <path d="M11 68H5c-.55 0-1 .45-1 1s.45 1 1 1h6c.55 0 1-.45 1-1s-.45-1-1-1z" id="checkboxes-e"></path>
+              <mask id="checkboxes-j" x="0" y="0" width="8" height="2" fill="#fff">
+                  <use xlink:href="#checkboxes-e"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g>
+                          <use mask="url(#checkboxes-f)" stroke-width="4" xlink:href="#checkboxes-a"></use>
+                          <path d="M26.5 8.5H76" stroke-width="3" stroke-linecap="square"></path>
+                          <use mask="url(#checkboxes-g)" stroke-width="4" xlink:href="#checkboxes-b"></use>
+                          <use mask="url(#checkboxes-h)" stroke-width="4" xlink:href="#checkboxes-c"></use>
+                          <path d="M26.5 38.5H132" stroke-width="3" stroke-linecap="square"></path>
+                          <use mask="url(#checkboxes-i)" stroke-width="4" xlink:href="#checkboxes-d"></use>
+                          <use mask="url(#checkboxes-j)" stroke-width="4" xlink:href="#checkboxes-e"></use>
+                          <path d="M26.5 68.5H166" stroke-width="3" stroke-linecap="square"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-file-upload"><svg width="446" height="44" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="file-upload-a" x="9" y="7" width="431" height="31" rx="3"></rect>
+              <mask id="file-upload-f" x="0" y="0" width="431" height="31" fill="#fff">
+                  <use xlink:href="#file-upload-a"></use>
+              </mask>
+              <circle id="file-upload-b" cx="10" cy="8" r="4"></circle>
+              <mask id="file-upload-g" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#file-upload-b"></use>
+              </mask>
+              <circle id="file-upload-c" cx="10" cy="37" r="4"></circle>
+              <mask id="file-upload-h" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#file-upload-c"></use>
+              </mask>
+              <circle id="file-upload-d" cx="439" cy="37" r="4"></circle>
+              <mask id="file-upload-i" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#file-upload-d"></use>
+              </mask>
+              <circle id="file-upload-e" cx="439" cy="8" r="4"></circle>
+              <mask id="file-upload-j" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#file-upload-e"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <use mask="url(#file-upload-f)" stroke-width="4" opacity=".4" xlink:href="#file-upload-a"></use>
+                          <path d="M10 0v44M439 2v42M340 2v42M0 8h446M0 37h444" stroke-opacity=".5" stroke-width="2"></path>
+                          <use mask="url(#file-upload-g)" stroke-width="2" opacity=".4" xlink:href="#file-upload-b"></use>
+                          <use mask="url(#file-upload-h)" stroke-width="2" opacity=".4" xlink:href="#file-upload-c"></use>
+                          <use mask="url(#file-upload-i)" stroke-width="2" opacity=".4" xlink:href="#file-upload-d"></use>
+                          <use mask="url(#file-upload-j)" stroke-width="2" opacity=".4" xlink:href="#file-upload-e"></use>
+                          <path d="M21.5 22.5H94m258.5 0H415" stroke-width="3" stroke-linecap="square"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-input-groups"><svg width="314" height="194" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="input-groups-a" x="6" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="input-groups-w" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#input-groups-a"></use>
+              </mask>
+              <circle id="input-groups-b" cx="7" cy="6" r="4"></circle>
+              <mask id="input-groups-x" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-b"></use>
+              </mask>
+              <circle id="input-groups-c" cx="7" cy="35" r="4"></circle>
+              <mask id="input-groups-y" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-c"></use>
+              </mask>
+              <circle id="input-groups-d" cx="306" cy="35" r="4"></circle>
+              <mask id="input-groups-z" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-d"></use>
+              </mask>
+              <circle id="input-groups-e" cx="306" cy="6" r="4"></circle>
+              <mask id="input-groups-A" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-e"></use>
+              </mask>
+              <rect id="input-groups-f" x="6" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="input-groups-B" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#input-groups-f"></use>
+              </mask>
+              <mask id="input-groups-C" x="-2" y="-2" width="305" height="35">
+                  <path fill="#fff" d="M4 3h305v35H4z"></path>
+                  <use xlink:href="#input-groups-f"></use>
+              </mask>
+              <circle id="input-groups-g" cx="7" cy="6" r="4"></circle>
+              <mask id="input-groups-D" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-g"></use>
+              </mask>
+              <circle id="input-groups-h" cx="7" cy="35" r="4"></circle>
+              <mask id="input-groups-E" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-h"></use>
+              </mask>
+              <circle id="input-groups-i" cx="306" cy="35" r="4"></circle>
+              <mask id="input-groups-F" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-i"></use>
+              </mask>
+              <circle id="input-groups-j" cx="306" cy="6" r="4"></circle>
+              <mask id="input-groups-G" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-j"></use>
+              </mask>
+              <rect id="input-groups-k" x="6" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="input-groups-H" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#input-groups-k"></use>
+              </mask>
+              <mask id="input-groups-I" x="-2" y="-2" width="305" height="35">
+                  <path fill="#fff" d="M4 3h305v35H4z"></path>
+                  <use xlink:href="#input-groups-k"></use>
+              </mask>
+              <path d="M298.56 25.44l-2.67-2.68A6.94 6.94 0 0 0 297 19c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.42 3.76-1.11l2.68 2.67a1.498 1.498 0 1 0 2.12-2.12zM290 24c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" id="input-groups-l"></path>
+              <mask id="input-groups-J" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#input-groups-l"></use>
+              </mask>
+              <circle id="input-groups-m" cx="7" cy="6" r="4"></circle>
+              <mask id="input-groups-K" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-m"></use>
+              </mask>
+              <circle id="input-groups-n" cx="7" cy="35" r="4"></circle>
+              <mask id="input-groups-L" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-n"></use>
+              </mask>
+              <circle id="input-groups-o" cx="306" cy="35" r="4"></circle>
+              <mask id="input-groups-M" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-o"></use>
+              </mask>
+              <circle id="input-groups-p" cx="306" cy="6" r="4"></circle>
+              <mask id="input-groups-N" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-p"></use>
+              </mask>
+              <rect id="input-groups-q" x="6" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="input-groups-O" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#input-groups-q"></use>
+              </mask>
+              <circle id="input-groups-r" cx="7" cy="6" r="4"></circle>
+              <mask id="input-groups-P" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-r"></use>
+              </mask>
+              <circle id="input-groups-s" cx="7" cy="35" r="4"></circle>
+              <mask id="input-groups-Q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-s"></use>
+              </mask>
+              <circle id="input-groups-t" cx="306" cy="35" r="4"></circle>
+              <mask id="input-groups-R" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-t"></use>
+              </mask>
+              <circle id="input-groups-u" cx="306" cy="6" r="4"></circle>
+              <mask id="input-groups-S" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#input-groups-u"></use>
+              </mask>
+              <path d="M292.42 20l3.29-3.29a1.003 1.003 0 0 0-1.42-1.42L291 18.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l3.29 3.29-3.29 3.29a1.003 1.003 0 0 0 1.42 1.42l3.29-3.29 3.29 3.29a1.003 1.003 0 0 0 1.42-1.42L292.42 20z" id="input-groups-v"></path>
+              <mask id="input-groups-T" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#input-groups-v"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <g>
+                                  <use mask="url(#input-groups-w)" stroke-width="4" opacity=".4" xlink:href="#input-groups-a"></use>
+                                  <path d="M7 0v42M306 0v42M0 6h314M0 6h314M0 35h314" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#input-groups-x)" stroke-width="2" opacity=".4" xlink:href="#input-groups-b"></use>
+                                  <use mask="url(#input-groups-y)" stroke-width="2" opacity=".4" xlink:href="#input-groups-c"></use>
+                                  <use mask="url(#input-groups-z)" stroke-width="2" opacity=".4" xlink:href="#input-groups-d"></use>
+                                  <use mask="url(#input-groups-A)" stroke-width="2" opacity=".4" xlink:href="#input-groups-e"></use>
+                                  <path d="M18.5 20.5H71" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(0 50)">
+                                  <g opacity=".4" stroke-width="4">
+                                      <use mask="url(#input-groups-B)" xlink:href="#input-groups-f"></use>
+                                      <use mask="url(#input-groups-C)" xlink:href="#input-groups-f"></use>
+                                  </g>
+                                  <path d="M7 0v42M306 0v42M0 6h314M0 35h314" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#input-groups-D)" stroke-width="2" opacity=".4" xlink:href="#input-groups-g"></use>
+                                  <use mask="url(#input-groups-E)" stroke-width="2" opacity=".4" xlink:href="#input-groups-h"></use>
+                                  <use mask="url(#input-groups-F)" stroke-width="2" opacity=".4" xlink:href="#input-groups-i"></use>
+                                  <use mask="url(#input-groups-G)" stroke-width="2" opacity=".4" xlink:href="#input-groups-j"></use>
+                                  <path d="M18.5 20.5H71" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(0 101)">
+                                  <g opacity=".4" stroke-width="4">
+                                      <use mask="url(#input-groups-H)" xlink:href="#input-groups-k"></use>
+                                      <use mask="url(#input-groups-I)" xlink:href="#input-groups-k"></use>
+                                  </g>
+                                  <path d="M306 0v42M7 0v42M0 6h314M0 35h314" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#input-groups-J)" stroke-width="4" xlink:href="#input-groups-l"></use>
+                                  <use mask="url(#input-groups-K)" stroke-width="2" opacity=".4" xlink:href="#input-groups-m"></use>
+                                  <use mask="url(#input-groups-L)" stroke-width="2" opacity=".4" xlink:href="#input-groups-n"></use>
+                                  <use mask="url(#input-groups-M)" stroke-width="2" opacity=".4" xlink:href="#input-groups-o"></use>
+                                  <use mask="url(#input-groups-N)" stroke-width="2" opacity=".4" xlink:href="#input-groups-p"></use>
+                                  <path d="M18.5 20.5H111" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(0 152)">
+                                  <use mask="url(#input-groups-O)" stroke-width="4" opacity=".4" xlink:href="#input-groups-q"></use>
+                                  <path d="M306 0v42M0 6h314M7 0v42m-7-7h314" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#input-groups-P)" stroke-width="2" opacity=".4" xlink:href="#input-groups-r"></use>
+                                  <use mask="url(#input-groups-Q)" stroke-width="2" opacity=".4" xlink:href="#input-groups-s"></use>
+                                  <use mask="url(#input-groups-R)" stroke-width="2" opacity=".4" xlink:href="#input-groups-t"></use>
+                                  <use mask="url(#input-groups-S)" stroke-width="2" opacity=".4" xlink:href="#input-groups-u"></use>
+                                  <use mask="url(#input-groups-T)" stroke-width="4" xlink:href="#input-groups-v"></use>
+                                  <path d="M18.5 20.5H111" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-inputs"><svg width="317" height="238" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="inputs-a" x="7" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="inputs-x" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#inputs-a"></use>
+              </mask>
+              <circle id="inputs-b" cx="8" cy="6" r="4"></circle>
+              <mask id="inputs-y" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-b"></use>
+              </mask>
+              <circle id="inputs-c" cx="8" cy="35" r="4"></circle>
+              <mask id="inputs-z" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-c"></use>
+              </mask>
+              <circle id="inputs-d" cx="307" cy="35" r="4"></circle>
+              <mask id="inputs-A" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-d"></use>
+              </mask>
+              <circle id="inputs-e" cx="307" cy="6" r="4"></circle>
+              <mask id="inputs-B" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-e"></use>
+              </mask>
+              <rect id="inputs-f" x="6" y="6" width="301" height="31" rx="3"></rect>
+              <mask id="inputs-C" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#inputs-f"></use>
+              </mask>
+              <circle id="inputs-g" cx="7" cy="7" r="4"></circle>
+              <mask id="inputs-D" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-g"></use>
+              </mask>
+              <circle id="inputs-h" cx="7" cy="36" r="4"></circle>
+              <mask id="inputs-E" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-h"></use>
+              </mask>
+              <circle id="inputs-i" cx="306" cy="36" r="4"></circle>
+              <mask id="inputs-F" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-i"></use>
+              </mask>
+              <circle id="inputs-j" cx="306" cy="7" r="4"></circle>
+              <mask id="inputs-G" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-j"></use>
+              </mask>
+              <rect id="inputs-k" x="7" y="7" width="301" height="31" rx="3"></rect>
+              <mask id="inputs-H" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#inputs-k"></use>
+              </mask>
+              <mask id="inputs-I" x="-2" y="-2" width="305" height="35">
+                  <path fill="#fff" d="M5 5h305v35H5z"></path>
+                  <use xlink:href="#inputs-k"></use>
+              </mask>
+              <circle id="inputs-l" cx="8" cy="8" r="4"></circle>
+              <mask id="inputs-J" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-l"></use>
+              </mask>
+              <circle id="inputs-m" cx="8" cy="37" r="4"></circle>
+              <mask id="inputs-K" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-m"></use>
+              </mask>
+              <circle id="inputs-n" cx="307" cy="37" r="4"></circle>
+              <mask id="inputs-L" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-n"></use>
+              </mask>
+              <circle id="inputs-o" cx="307" cy="8" r="4"></circle>
+              <mask id="inputs-M" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-o"></use>
+              </mask>
+              <rect id="inputs-p" x="8" y="7" width="301" height="31" rx="3"></rect>
+              <mask id="inputs-N" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#inputs-p"></use>
+              </mask>
+              <circle id="inputs-q" cx="9" cy="8" r="4"></circle>
+              <mask id="inputs-O" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-q"></use>
+              </mask>
+              <circle id="inputs-r" cx="9" cy="37" r="4"></circle>
+              <mask id="inputs-P" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-r"></use>
+              </mask>
+              <circle id="inputs-s" cx="308" cy="37" r="4"></circle>
+              <mask id="inputs-Q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-s"></use>
+              </mask>
+              <circle id="inputs-t" cx="308" cy="8" r="4"></circle>
+              <mask id="inputs-R" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#inputs-t"></use>
+              </mask>
+              <path d="M26 18c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1s-1 .45-1 1v1c0 .55.45 1 1 1zm3-2h-1v1c0 1.1-.9 2-2 2s-2-.9-2-2v-1h-3v1c0 1.1-.9 2-2 2s-2-.9-2-2v-1h-1c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h13c.55 0 1-.45 1-1V17c0-.55-.45-1-1-1zm-9 12h-3v-3h3v3zm0-4h-3v-3h3v3zm4 4h-3v-3h3v3zm0-4h-3v-3h3v3zm4 4h-3v-3h3v3zm0-4h-3v-3h3v3zm-9-6c.55 0 1-.45 1-1v-1c0-.55-.45-1-1-1s-1 .45-1 1v1c0 .55.45 1 1 1z" id="inputs-u"></path>
+              <mask id="inputs-S" x="0" y="0" width="15" height="15" fill="#fff">
+                  <use xlink:href="#inputs-u"></use>
+              </mask>
+              <rect id="inputs-v" x="4" width="301" height="31" rx="15"></rect>
+              <mask id="inputs-T" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#inputs-v"></use>
+              </mask>
+              <path d="M26.56 20.44l-2.67-2.68A6.94 6.94 0 0 0 25 14c0-3.87-3.13-7-7-7s-7 3.13-7 7 3.13 7 7 7c1.39 0 2.68-.42 3.76-1.11l2.68 2.67a1.498 1.498 0 1 0 2.12-2.12zM18 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" id="inputs-w"></path>
+              <mask id="inputs-U" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#inputs-w"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <g transform="translate(1)">
+                                  <use mask="url(#inputs-x)" stroke-width="4" opacity=".4" xlink:href="#inputs-a"></use>
+                                  <path d="M1 6h314M0 35h314M8 0v42M307 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#inputs-y)" stroke-width="2" opacity=".4" xlink:href="#inputs-b"></use>
+                                  <use mask="url(#inputs-z)" stroke-width="2" opacity=".4" xlink:href="#inputs-c"></use>
+                                  <use mask="url(#inputs-A)" stroke-width="2" opacity=".4" xlink:href="#inputs-d"></use>
+                                  <use mask="url(#inputs-B)" stroke-width="2" opacity=".4" xlink:href="#inputs-e"></use>
+                                  <path d="M20 20h31.5" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(2 49)">
+                                  <use mask="url(#inputs-C)" stroke-width="4" opacity=".4" xlink:href="#inputs-f"></use>
+                                  <path d="M0 7h314M0 36h314M7 1v42M306 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#inputs-D)" stroke-width="2" opacity=".4" xlink:href="#inputs-g"></use>
+                                  <use mask="url(#inputs-E)" stroke-width="2" opacity=".4" xlink:href="#inputs-h"></use>
+                                  <use mask="url(#inputs-F)" stroke-width="2" opacity=".4" xlink:href="#inputs-i"></use>
+                                  <use mask="url(#inputs-G)" stroke-width="2" opacity=".4" xlink:href="#inputs-j"></use>
+                                  <path d="M19 21h70.5" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(1 99)">
+                                  <g opacity=".4" stroke-width="4">
+                                      <use mask="url(#inputs-H)" xlink:href="#inputs-k"></use>
+                                      <use mask="url(#inputs-I)" xlink:href="#inputs-k"></use>
+                                  </g>
+                                  <path d="M2 8h314M0 37h314M8 2v42M307 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#inputs-J)" stroke-width="2" opacity=".4" xlink:href="#inputs-l"></use>
+                                  <use mask="url(#inputs-K)" stroke-width="2" opacity=".4" xlink:href="#inputs-m"></use>
+                                  <use mask="url(#inputs-L)" stroke-width="2" opacity=".4" xlink:href="#inputs-n"></use>
+                                  <use mask="url(#inputs-M)" stroke-width="2" opacity=".4" xlink:href="#inputs-o"></use>
+                                  <path d="M20 22h81.5" stroke-width="3" stroke-linecap="square"></path>
+                              </g>
+                              <g transform="translate(0 149)">
+                                  <use mask="url(#inputs-N)" stroke-width="4" opacity=".4" xlink:href="#inputs-p"></use>
+                                  <path d="M2 8h314M0 37h314M9 2v42M308 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                                  <use mask="url(#inputs-O)" stroke-width="2" opacity=".4" xlink:href="#inputs-q"></use>
+                                  <use mask="url(#inputs-P)" stroke-width="2" opacity=".4" xlink:href="#inputs-r"></use>
+                                  <use mask="url(#inputs-Q)" stroke-width="2" opacity=".4" xlink:href="#inputs-s"></use>
+                                  <use mask="url(#inputs-R)" stroke-width="2" opacity=".4" xlink:href="#inputs-t"></use>
+                                  <path d="M39 22h88.5" stroke-width="3" stroke-linecap="square"></path>
+                                  <use mask="url(#inputs-S)" stroke-width="4" xlink:href="#inputs-u"></use>
+                              </g>
+                              <g transform="translate(4 207)">
+                                  <use mask="url(#inputs-T)" stroke-width="4" opacity=".4" xlink:href="#inputs-v"></use>
+                                  <path d="M0 1h310M2 30h306" stroke-opacity=".5" stroke-width="2"></path>
+                                  <path d="M32 15h73.5" stroke-width="3" stroke-linecap="square"></path>
+                                  <use mask="url(#inputs-U)" stroke-width="4" xlink:href="#inputs-w"></use>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-labels"><svg width="315" height="104" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="labels-a" x="7" y="16" width="301" height="31" rx="3"></rect>
+              <mask id="labels-k" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#labels-a"></use>
+              </mask>
+              <circle id="labels-b" cx="8" cy="17" r="4"></circle>
+              <mask id="labels-l" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-b"></use>
+              </mask>
+              <circle id="labels-c" cx="8" cy="46" r="4"></circle>
+              <mask id="labels-m" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-c"></use>
+              </mask>
+              <circle id="labels-d" cx="307" cy="46" r="4"></circle>
+              <mask id="labels-n" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-d"></use>
+              </mask>
+              <circle id="labels-e" cx="307" cy="17" r="4"></circle>
+              <mask id="labels-o" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-e"></use>
+              </mask>
+              <rect id="labels-f" x="117" y="5" width="181" height="31" rx="3"></rect>
+              <mask id="labels-p" x="0" y="0" width="181" height="31" fill="#fff">
+                  <use xlink:href="#labels-f"></use>
+              </mask>
+              <circle id="labels-g" cx="118" cy="6" r="4"></circle>
+              <mask id="labels-q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-g"></use>
+              </mask>
+              <circle id="labels-h" cx="118" cy="35" r="4"></circle>
+              <mask id="labels-r" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-h"></use>
+              </mask>
+              <circle id="labels-i" cx="297" cy="35" r="4"></circle>
+              <mask id="labels-s" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-i"></use>
+              </mask>
+              <circle id="labels-j" cx="297" cy="6" r="4"></circle>
+              <mask id="labels-t" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#labels-j"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g transform="translate(0 1)">
+                              <use mask="url(#labels-k)" stroke-width="4" opacity=".4" xlink:href="#labels-a"></use>
+                              <path d="M1 17h314M0 46h314M8 11v42m299-42v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#labels-l)" stroke-width="2" opacity=".4" xlink:href="#labels-b"></use>
+                              <use mask="url(#labels-m)" stroke-width="2" opacity=".4" xlink:href="#labels-c"></use>
+                              <use mask="url(#labels-n)" stroke-width="2" opacity=".4" xlink:href="#labels-d"></use>
+                              <use mask="url(#labels-o)" stroke-width="2" opacity=".4" xlink:href="#labels-e"></use>
+                              <path d="M9 1h45M19 31h35" stroke-width="3" stroke-linecap="square"></path>
+                          </g>
+                          <g transform="translate(10 62)">
+                              <use mask="url(#labels-p)" stroke-width="4" opacity=".4" xlink:href="#labels-f"></use>
+                              <path d="M111 6h194M110 35h194M118 0v42M297 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#labels-q)" stroke-width="2" opacity=".4" xlink:href="#labels-g"></use>
+                              <use mask="url(#labels-r)" stroke-width="2" opacity=".4" xlink:href="#labels-h"></use>
+                              <use mask="url(#labels-s)" stroke-width="2" opacity=".4" xlink:href="#labels-i"></use>
+                              <use mask="url(#labels-t)" stroke-width="2" opacity=".4" xlink:href="#labels-j"></use>
+                              <path d="M0 20h97m32 0h35" stroke-width="3" stroke-linecap="square"></path>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-radios"><svg width="115" height="46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <circle id="radios-a" cx="8" cy="8" r="8"></circle>
+              <mask id="radios-d" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#radios-a"></use>
+              </mask>
+              <circle id="radios-b" cx="8" cy="38" r="8"></circle>
+              <mask id="radios-e" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#radios-b"></use>
+              </mask>
+              <circle id="radios-c" cx="8" cy="38" r="3"></circle>
+              <mask id="radios-f" x="0" y="0" width="6" height="6" fill="#fff">
+                  <use xlink:href="#radios-c"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g>
+                          <path d="M23.5 7.5H53" stroke-width="3" stroke-linecap="square"></path>
+                          <use mask="url(#radios-d)" stroke-width="4" xlink:href="#radios-a"></use>
+                          <use mask="url(#radios-e)" stroke-width="4" xlink:href="#radios-b"></use>
+                          <use mask="url(#radios-f)" stroke-width="4" xlink:href="#radios-c"></use>
+                          <path d="M23.5 37.5H113" stroke-width="3" stroke-linecap="square"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-select-menus"><svg width="315" height="92" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="select-menus-a" x="7" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="select-menus-m" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#select-menus-a"></use>
+              </mask>
+              <circle id="select-menus-b" cx="8" cy="6" r="4"></circle>
+              <mask id="select-menus-n" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-b"></use>
+              </mask>
+              <circle id="select-menus-c" cx="8" cy="35" r="4"></circle>
+              <mask id="select-menus-o" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-c"></use>
+              </mask>
+              <circle id="select-menus-d" cx="307" cy="35" r="4"></circle>
+              <mask id="select-menus-p" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-d"></use>
+              </mask>
+              <circle id="select-menus-e" cx="307" cy="6" r="4"></circle>
+              <mask id="select-menus-q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-e"></use>
+              </mask>
+              <path d="M295 18h-6a1.003 1.003 0 0 0-.71 1.71l3 3c.18.18.43.29.71.29.28 0 .53-.11.71-.29l3-3A1.003 1.003 0 0 0 295 18z" id="select-menus-f"></path>
+              <mask id="select-menus-r" x="0" y="0" width="8" height="5" fill="#fff">
+                  <use xlink:href="#select-menus-f"></use>
+              </mask>
+              <rect id="select-menus-g" x="7" y="5" width="301" height="31" rx="3"></rect>
+              <mask id="select-menus-s" x="0" y="0" width="301" height="31" fill="#fff">
+                  <use xlink:href="#select-menus-g"></use>
+              </mask>
+              <mask id="select-menus-t" x="-2" y="-2" width="305" height="35">
+                  <path fill="#fff" d="M5 3h305v35H5z"></path>
+                  <use xlink:href="#select-menus-g"></use>
+              </mask>
+              <circle id="select-menus-h" cx="8" cy="6" r="4"></circle>
+              <mask id="select-menus-u" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-h"></use>
+              </mask>
+              <circle id="select-menus-i" cx="8" cy="35" r="4"></circle>
+              <mask id="select-menus-v" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-i"></use>
+              </mask>
+              <circle id="select-menus-j" cx="307" cy="35" r="4"></circle>
+              <mask id="select-menus-w" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-j"></use>
+              </mask>
+              <circle id="select-menus-k" cx="307" cy="6" r="4"></circle>
+              <mask id="select-menus-x" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#select-menus-k"></use>
+              </mask>
+              <path d="M295 18h-6a1.003 1.003 0 0 0-.71 1.71l3 3c.18.18.43.29.71.29.28 0 .53-.11.71-.29l3-3A1.003 1.003 0 0 0 295 18z" id="select-menus-l"></path>
+              <mask id="select-menus-y" x="0" y="0" width="8" height="5" fill="#fff">
+                  <use xlink:href="#select-menus-l"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <use mask="url(#select-menus-m)" stroke-width="4" opacity=".4" xlink:href="#select-menus-a"></use>
+                              <path d="M1 6h314M0 35h314M8 0v42M307 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#select-menus-n)" stroke-width="2" opacity=".4" xlink:href="#select-menus-b"></use>
+                              <use mask="url(#select-menus-o)" stroke-width="2" opacity=".4" xlink:href="#select-menus-c"></use>
+                              <use mask="url(#select-menus-p)" stroke-width="2" opacity=".4" xlink:href="#select-menus-d"></use>
+                              <use mask="url(#select-menus-q)" stroke-width="2" opacity=".4" xlink:href="#select-menus-e"></use>
+                              <path d="M20 20h85" stroke-width="3" stroke-linecap="square"></path>
+                              <use mask="url(#select-menus-r)" stroke-width="4" xlink:href="#select-menus-f"></use>
+                          </g>
+                          <g transform="translate(0 50)">
+                              <g opacity=".4" stroke-width="4">
+                                  <use mask="url(#select-menus-s)" xlink:href="#select-menus-g"></use>
+                                  <use mask="url(#select-menus-t)" xlink:href="#select-menus-g"></use>
+                              </g>
+                              <path d="M1 6h314M0 35h314M8 0v42M307 0v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#select-menus-u)" stroke-width="2" opacity=".4" xlink:href="#select-menus-h"></use>
+                              <use mask="url(#select-menus-v)" stroke-width="2" opacity=".4" xlink:href="#select-menus-i"></use>
+                              <use mask="url(#select-menus-w)" stroke-width="2" opacity=".4" xlink:href="#select-menus-j"></use>
+                              <use mask="url(#select-menus-x)" stroke-width="2" opacity=".4" xlink:href="#select-menus-k"></use>
+                              <path d="M20 20h85" stroke-width="3" stroke-linecap="square"></path>
+                              <use mask="url(#select-menus-y)" stroke-width="4" xlink:href="#select-menus-l"></use>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-sliders"><svg width="317" height="70" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="sliders-a" x="7" y="6" width="74" height="9" rx="4.5"></rect>
+              <mask id="sliders-q" x="0" y="0" width="74" height="9" fill="#fff">
+                  <use xlink:href="#sliders-a"></use>
+              </mask>
+              <path d="M148 6h156.505A4.5 4.5 0 0 1 309 10.5c0 2.485-2.006 4.5-4.495 4.5H148V6z" id="sliders-b"></path>
+              <mask id="sliders-r" x="0" y="0" width="161" height="9" fill="#fff">
+                  <use xlink:href="#sliders-b"></use>
+              </mask>
+              <circle id="sliders-c" cx="8" cy="7" r="4"></circle>
+              <mask id="sliders-s" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-c"></use>
+              </mask>
+              <circle id="sliders-d" cx="8" cy="14" r="4"></circle>
+              <mask id="sliders-t" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-d"></use>
+              </mask>
+              <circle id="sliders-e" cx="307" cy="14" r="4"></circle>
+              <mask id="sliders-u" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-e"></use>
+              </mask>
+              <circle id="sliders-f" cx="307" cy="7" r="4"></circle>
+              <mask id="sliders-v" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-f"></use>
+              </mask>
+              <path id="sliders-g" d="M79 .977h19v19H79z"></path>
+              <mask id="sliders-w" x="0" y="0" width="19" height="19" fill="#fff">
+                  <use xlink:href="#sliders-g"></use>
+              </mask>
+              <path id="sliders-h" d="M131 .977h19v19h-19z"></path>
+              <mask id="sliders-x" x="0" y="0" width="19" height="19" fill="#fff">
+                  <use xlink:href="#sliders-h"></use>
+              </mask>
+              <rect id="sliders-i" x="7" y="5" width="73" height="9" rx="4.5"></rect>
+              <mask id="sliders-y" x="0" y="0" width="73" height="9" fill="#fff">
+                  <use xlink:href="#sliders-i"></use>
+              </mask>
+              <path d="M237 5h66.505A4.5 4.5 0 0 1 308 9.5c0 2.485-2.01 4.5-4.495 4.5H237V5z" id="sliders-j"></path>
+              <mask id="sliders-z" x="0" y="0" width="71" height="9" fill="#fff">
+                  <use xlink:href="#sliders-j"></use>
+              </mask>
+              <circle id="sliders-k" cx="8" cy="6" r="4"></circle>
+              <mask id="sliders-A" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-k"></use>
+              </mask>
+              <circle id="sliders-l" cx="8" cy="13" r="4"></circle>
+              <mask id="sliders-B" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-l"></use>
+              </mask>
+              <circle id="sliders-m" cx="307" cy="14" r="4"></circle>
+              <mask id="sliders-C" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-m"></use>
+              </mask>
+              <circle id="sliders-n" cx="307" cy="6" r="4"></circle>
+              <mask id="sliders-D" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#sliders-n"></use>
+              </mask>
+              <path id="sliders-o" d="M78 .977h19v19H78z"></path>
+              <mask id="sliders-E" x="0" y="0" width="19" height="19" fill="#fff">
+                  <use xlink:href="#sliders-o"></use>
+              </mask>
+              <path id="sliders-p" d="M219 .977h19v19h-19z"></path>
+              <mask id="sliders-F" x="0" y="0" width="19" height="19" fill="#fff">
+                  <use xlink:href="#sliders-p"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <use mask="url(#sliders-q)" stroke-width="4" opacity=".4" xlink:href="#sliders-a"></use>
+                              <use mask="url(#sliders-r)" stroke-width="4" opacity=".4" xlink:href="#sliders-b"></use>
+                              <path d="M1 7h79m70 0h162M0 14h80m70 0h167M8 1v20M307 1v20" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#sliders-s)" stroke-width="2" opacity=".4" xlink:href="#sliders-c"></use>
+                              <use mask="url(#sliders-t)" stroke-width="2" opacity=".4" xlink:href="#sliders-d"></use>
+                              <use mask="url(#sliders-u)" stroke-width="2" opacity=".4" xlink:href="#sliders-e"></use>
+                              <use mask="url(#sliders-v)" stroke-width="2" opacity=".4" xlink:href="#sliders-f"></use>
+                              <use mask="url(#sliders-w)" stroke-width="4" xlink:href="#sliders-g"></use>
+                              <use mask="url(#sliders-x)" stroke-width="4" xlink:href="#sliders-h"></use>
+                              <path d="M98 7h32m-32 6h32m-32.339-1.161l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679" stroke-width="2" stroke-linecap="square"></path>
+                          </g>
+                          <g transform="translate(0 41)">
+                              <use mask="url(#sliders-y)" stroke-width="4" opacity=".4" xlink:href="#sliders-i"></use>
+                              <use mask="url(#sliders-z)" stroke-width="4" opacity=".4" xlink:href="#sliders-j"></use>
+                              <path d="M1 6h78m159 0h78M0 13h79m159 0h79M8 0v19M307 0v18" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#sliders-A)" stroke-width="2" opacity=".4" xlink:href="#sliders-k"></use>
+                              <use mask="url(#sliders-B)" stroke-width="2" opacity=".4" xlink:href="#sliders-l"></use>
+                              <use mask="url(#sliders-C)" stroke-width="2" opacity=".4" xlink:href="#sliders-m"></use>
+                              <use mask="url(#sliders-D)" stroke-width="2" opacity=".4" xlink:href="#sliders-n"></use>
+                              <use mask="url(#sliders-E)" stroke-width="4" xlink:href="#sliders-o"></use>
+                              <use mask="url(#sliders-F)" stroke-width="4" xlink:href="#sliders-p"></use>
+                              <path d="M23 28H13m80 0H83m80 0h-10m80 0h-10m80 0h-10M98 6h121M98 12h121M96.661 10.839L99.34 7.16m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679m2.321 3.679l2.679-3.679" stroke-width="2" stroke-linecap="square"></path>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-switches"><svg width="51" height="46" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <circle id="switches-a" cx="9" cy="8" r="5"></circle>
+              <mask id="switches-e" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#switches-a"></use>
+              </mask>
+              <path d="M0 8c0-4.418 3.588-8 7.995-8h10.01C22.42 0 26 3.59 26 8c0 4.418-3.588 8-7.995 8H7.995C3.58 16 0 12.41 0 8z" id="switches-b"></path>
+              <mask id="switches-f" x="0" y="0" width="26" height="16" fill="#fff">
+                  <use xlink:href="#switches-b"></use>
+              </mask>
+              <circle id="switches-c" cx="18" cy="38" r="5"></circle>
+              <mask id="switches-g" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#switches-c"></use>
+              </mask>
+              <path d="M0 38c0-4.418 3.588-8 7.995-8h10.01C22.42 30 26 33.59 26 38c0 4.418-3.588 8-7.995 8H7.995C3.58 46 0 42.41 0 38z" id="switches-d"></path>
+              <mask id="switches-h" x="0" y="0" width="26" height="16" fill="#fff">
+                  <use xlink:href="#switches-d"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g>
+                          <path d="M34.5 7.5H49" stroke-width="3" stroke-linecap="square"></path>
+                          <use mask="url(#switches-e)" stroke-width="4" xlink:href="#switches-a"></use>
+                          <use mask="url(#switches-f)" stroke-width="4" xlink:href="#switches-b"></use>
+                          <use mask="url(#switches-g)" stroke-width="4" xlink:href="#switches-c"></use>
+                          <use mask="url(#switches-h)" stroke-width="4" xlink:href="#switches-d"></use>
+                          <path d="M34.5 37.5H46" stroke-width="3" stroke-linecap="square"></path>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-time-selections"><svg width="215" height="154" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <rect id="time-selections-a" x="7" y="16" width="201" height="31" rx="3"></rect>
+              <mask id="time-selections-M" x="0" y="0" width="201" height="31" fill="#fff">
+                  <use xlink:href="#time-selections-a"></use>
+              </mask>
+              <circle id="time-selections-b" cx="8" cy="17" r="4"></circle>
+              <mask id="time-selections-N" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-b"></use>
+              </mask>
+              <circle id="time-selections-c" cx="8" cy="46" r="4"></circle>
+              <mask id="time-selections-O" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-c"></use>
+              </mask>
+              <circle id="time-selections-d" cx="207" cy="46" r="4"></circle>
+              <mask id="time-selections-P" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-d"></use>
+              </mask>
+              <circle id="time-selections-e" cx="207" cy="17" r="4"></circle>
+              <mask id="time-selections-Q" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-e"></use>
+              </mask>
+              <path id="time-selections-f" d="M46 28h3v3h-3z"></path>
+              <mask id="time-selections-R" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-f"></use>
+              </mask>
+              <path id="time-selections-g" d="M46 34h3v3h-3z"></path>
+              <mask id="time-selections-S" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-g"></use>
+              </mask>
+              <path id="time-selections-h" d="M83 28h3v3h-3z"></path>
+              <mask id="time-selections-T" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-h"></use>
+              </mask>
+              <path id="time-selections-i" d="M83 34h3v3h-3z"></path>
+              <mask id="time-selections-U" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-i"></use>
+              </mask>
+              <path id="time-selections-j" d="M121 28h3v3h-3z"></path>
+              <mask id="time-selections-V" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-j"></use>
+              </mask>
+              <path id="time-selections-k" d="M121 34h3v3h-3z"></path>
+              <mask id="time-selections-W" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-k"></use>
+              </mask>
+              <path id="time-selections-l" d="M159 28h3v3h-3z"></path>
+              <mask id="time-selections-X" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-l"></use>
+              </mask>
+              <path id="time-selections-m" d="M159 34h3v3h-3z"></path>
+              <mask id="time-selections-Y" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-m"></use>
+              </mask>
+              <path d="M34 58c-.28 0-.53.11-.71.29L30 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 34 58z" id="time-selections-n"></path>
+              <mask id="time-selections-Z" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-n"></use>
+              </mask>
+              <path d="M72 58c-.28 0-.53.11-.71.29L68 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 72 58z" id="time-selections-o"></path>
+              <mask id="time-selections-aa" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-o"></use>
+              </mask>
+              <path d="M110 58c-.28 0-.53.11-.71.29L106 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 110 58z" id="time-selections-p"></path>
+              <mask id="time-selections-ab" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-p"></use>
+              </mask>
+              <path d="M147 58c-.28 0-.53.11-.71.29L143 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 147 58z" id="time-selections-q"></path>
+              <mask id="time-selections-ac" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-q"></use>
+              </mask>
+              <path d="M185 58c-.28 0-.53.11-.71.29L181 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 185 58z" id="time-selections-r"></path>
+              <mask id="time-selections-ad" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-r"></use>
+              </mask>
+              <path d="M33.29.29L30 3.58 26.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 33.29.29z" id="time-selections-s"></path>
+              <mask id="time-selections-ae" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-s"></use>
+              </mask>
+              <path d="M71.29.29L68 3.58 64.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 71.29.29z" id="time-selections-t"></path>
+              <mask id="time-selections-af" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-t"></use>
+              </mask>
+              <path d="M109.29.29L106 3.58 102.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4a1.003 1.003 0 0 0-1.42-1.42z" id="time-selections-u"></path>
+              <mask id="time-selections-ag" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-u"></use>
+              </mask>
+              <path d="M146.29.29L143 3.58 139.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4a1.003 1.003 0 0 0-1.42-1.42z" id="time-selections-v"></path>
+              <mask id="time-selections-ah" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-v"></use>
+              </mask>
+              <path d="M184.29.29L181 3.58 177.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4a1.003 1.003 0 0 0-1.42-1.42z" id="time-selections-w"></path>
+              <mask id="time-selections-ai" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-w"></use>
+              </mask>
+              <rect id="time-selections-x" x="7" y="16" width="121" height="31" rx="3"></rect>
+              <mask id="time-selections-aj" x="0" y="0" width="121" height="31" fill="#fff">
+                  <use xlink:href="#time-selections-x"></use>
+              </mask>
+              <circle id="time-selections-y" cx="8" cy="17" r="4"></circle>
+              <mask id="time-selections-ak" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-y"></use>
+              </mask>
+              <circle id="time-selections-z" cx="8" cy="46" r="4"></circle>
+              <mask id="time-selections-al" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-z"></use>
+              </mask>
+              <circle id="time-selections-A" cx="127" cy="46" r="4"></circle>
+              <mask id="time-selections-am" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-A"></use>
+              </mask>
+              <circle id="time-selections-B" cx="127" cy="17" r="4"></circle>
+              <mask id="time-selections-an" x="0" y="0" width="8" height="8" fill="#fff">
+                  <use xlink:href="#time-selections-B"></use>
+              </mask>
+              <path id="time-selections-C" d="M46 28h3v3h-3z"></path>
+              <mask id="time-selections-ao" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-C"></use>
+              </mask>
+              <path id="time-selections-D" d="M46 34h3v3h-3z"></path>
+              <mask id="time-selections-ap" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-D"></use>
+              </mask>
+              <path id="time-selections-E" d="M83 28h3v3h-3z"></path>
+              <mask id="time-selections-aq" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-E"></use>
+              </mask>
+              <path id="time-selections-F" d="M83 34h3v3h-3z"></path>
+              <mask id="time-selections-ar" x="0" y="0" width="3" height="3" fill="#fff">
+                  <use xlink:href="#time-selections-F"></use>
+              </mask>
+              <path d="M34 58c-.28 0-.53.11-.71.29L30 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 34 58z" id="time-selections-G"></path>
+              <mask id="time-selections-as" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-G"></use>
+              </mask>
+              <path d="M72 58c-.28 0-.53.11-.71.29L68 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 72 58z" id="time-selections-H"></path>
+              <mask id="time-selections-at" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-H"></use>
+              </mask>
+              <path d="M110 58c-.28 0-.53.11-.71.29L106 61.58l-3.29-3.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 110 58z" id="time-selections-I"></path>
+              <mask id="time-selections-au" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-I"></use>
+              </mask>
+              <path d="M33.29.29L30 3.58 26.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 33.29.29z" id="time-selections-J"></path>
+              <mask id="time-selections-av" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-J"></use>
+              </mask>
+              <path d="M71.29.29L68 3.58 64.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4A1.003 1.003 0 0 0 71.29.29z" id="time-selections-K"></path>
+              <mask id="time-selections-aw" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-K"></use>
+              </mask>
+              <path d="M109.29.29L106 3.58 102.71.29a1.003 1.003 0 0 0-1.42 1.42l4 4c.18.18.43.29.71.29.28 0 .53-.11.71-.29l4-4a1.003 1.003 0 0 0-1.42-1.42z" id="time-selections-L"></path>
+              <mask id="time-selections-ax" x="0" y="0" width="10" height="6" fill="#fff">
+                  <use xlink:href="#time-selections-L"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g opacity=".8">
+                          <g>
+                              <use mask="url(#time-selections-M)" stroke-width="4" opacity=".4" xlink:href="#time-selections-a"></use>
+                              <path d="M1 17h214M0 46h214M8 11v42m199-42v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#time-selections-N)" stroke-width="2" opacity=".4" xlink:href="#time-selections-b"></use>
+                              <use mask="url(#time-selections-O)" stroke-width="2" opacity=".4" xlink:href="#time-selections-c"></use>
+                              <use mask="url(#time-selections-P)" stroke-width="2" opacity=".4" xlink:href="#time-selections-d"></use>
+                              <use mask="url(#time-selections-Q)" stroke-width="2" opacity=".4" xlink:href="#time-selections-e"></use>
+                              <path d="M23 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-R)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-f"></use>
+                              <use mask="url(#time-selections-S)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-g"></use>
+                              <path d="M60 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-T)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-h"></use>
+                              <use mask="url(#time-selections-U)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-i"></use>
+                              <path d="M98 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-V)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-j"></use>
+                              <use mask="url(#time-selections-W)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-k"></use>
+                              <path d="M136 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-X)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-l"></use>
+                              <use mask="url(#time-selections-Y)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-m"></use>
+                              <path d="M174 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-Z)" stroke-width="4" xlink:href="#time-selections-n"></use>
+                              <use mask="url(#time-selections-aa)" stroke-width="4" xlink:href="#time-selections-o"></use>
+                              <use mask="url(#time-selections-ab)" stroke-width="4" xlink:href="#time-selections-p"></use>
+                              <use mask="url(#time-selections-ac)" stroke-width="4" xlink:href="#time-selections-q"></use>
+                              <use mask="url(#time-selections-ad)" stroke-width="4" xlink:href="#time-selections-r"></use>
+                              <use mask="url(#time-selections-ae)" stroke-width="4" transform="rotate(-180 30 3)" xlink:href="#time-selections-s"></use>
+                              <use mask="url(#time-selections-af)" stroke-width="4" transform="rotate(-180 68 3)" xlink:href="#time-selections-t"></use>
+                              <use mask="url(#time-selections-ag)" stroke-width="4" transform="rotate(-180 106 3)" xlink:href="#time-selections-u"></use>
+                              <use mask="url(#time-selections-ah)" stroke-width="4" transform="rotate(-180 143 3)" xlink:href="#time-selections-v"></use>
+                              <use mask="url(#time-selections-ai)" stroke-width="4" transform="rotate(-180 181 3)" xlink:href="#time-selections-w"></use>
+                          </g>
+                          <g transform="translate(0 90)">
+                              <use mask="url(#time-selections-aj)" stroke-width="4" opacity=".4" xlink:href="#time-selections-x"></use>
+                              <path d="M1 17h134M0 46h134M8 11v42m119-42v42" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#time-selections-ak)" stroke-width="2" opacity=".4" xlink:href="#time-selections-y"></use>
+                              <use mask="url(#time-selections-al)" stroke-width="2" opacity=".4" xlink:href="#time-selections-z"></use>
+                              <use mask="url(#time-selections-am)" stroke-width="2" opacity=".4" xlink:href="#time-selections-A"></use>
+                              <use mask="url(#time-selections-an)" stroke-width="2" opacity=".4" xlink:href="#time-selections-B"></use>
+                              <path d="M23 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-ao)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-C"></use>
+                              <use mask="url(#time-selections-ap)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-D"></use>
+                              <path d="M60 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-aq)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-E"></use>
+                              <use mask="url(#time-selections-ar)" stroke-width="6" stroke-linecap="square" xlink:href="#time-selections-F"></use>
+                              <path d="M98 32h15" stroke-width="2" stroke-linecap="square"></path>
+                              <use mask="url(#time-selections-as)" stroke-width="4" xlink:href="#time-selections-G"></use>
+                              <use mask="url(#time-selections-at)" stroke-width="4" xlink:href="#time-selections-H"></use>
+                              <use mask="url(#time-selections-au)" stroke-width="4" xlink:href="#time-selections-I"></use>
+                              <use mask="url(#time-selections-av)" stroke-width="4" transform="rotate(-180 30 3)" xlink:href="#time-selections-J"></use>
+                              <use mask="url(#time-selections-aw)" stroke-width="4" transform="rotate(-180 68 3)" xlink:href="#time-selections-K"></use>
+                              <use mask="url(#time-selections-ax)" stroke-width="4" transform="rotate(-180 106 3)" xlink:href="#time-selections-L"></use>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div><div class="landing-wireframe landing-logo-wireframe-toggles"><svg width="450" height="346" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs>
+              <path d="M43.816 40h174.181A3.004 3.004 0 0 1 221 43v288.696c0 1.654-1.344 3-3.003 3H13.003a3.004 3.004 0 0 1-3.003-3V43.001A3.003 3.003 0 0 1 13.003 40h13.18c.051-.05.1-.1.145-.15l7.344-8.246c.733-.823 1.924-.822 2.656 0l7.344 8.245c.045.051.094.101.144.151z" id="toggles-a"></path>
+              <mask id="toggles-M" x="0" y="0" width="211" height="303.71" fill="#fff">
+                  <use xlink:href="#toggles-a"></use>
+              </mask>
+              <circle id="toggles-b" cx="11" cy="41" r="5"></circle>
+              <mask id="toggles-N" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-b"></use>
+              </mask>
+              <circle id="toggles-c" cx="220" cy="41" r="5"></circle>
+              <mask id="toggles-O" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-c"></use>
+              </mask>
+              <circle id="toggles-d" cx="220" cy="334" r="5"></circle>
+              <mask id="toggles-P" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-d"></use>
+              </mask>
+              <circle id="toggles-e" cx="10" cy="334" r="5"></circle>
+              <mask id="toggles-Q" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-e"></use>
+              </mask>
+              <path id="toggles-f" d="M192 60l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-R" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-f"></use>
+              </mask>
+              <path id="toggles-g" d="M192 100l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-S" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-g"></use>
+              </mask>
+              <path id="toggles-h" d="M192 140l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-T" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-h"></use>
+              </mask>
+              <path id="toggles-i" d="M192 180l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-U" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-i"></use>
+              </mask>
+              <path id="toggles-j" d="M192 220l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-V" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-j"></use>
+              </mask>
+              <path id="toggles-k" d="M192 260l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-W" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-k"></use>
+              </mask>
+              <path id="toggles-l" d="M192 300l2.47 5.27 5.53.85-4 4.1.94 5.78-4.94-2.73-4.94 2.73.94-5.78-4-4.1 5.53-.85z"></path>
+              <mask id="toggles-X" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-l"></use>
+              </mask>
+              <path d="M44 8h-2.31c-.14-.46-.33-.89-.56-1.3l1.7-1.7a.996.996 0 0 0 0-1.41l-1.41-1.41a.996.996 0 0 0-1.41 0l-1.7 1.7c-.41-.22-.84-.41-1.3-.55V1c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v2.33c-.48.14-.94.35-1.37.59l-1.63-1.63a.972.972 0 0 0-1.36 0l-1.36 1.36c-.37.38-.37.98 0 1.36l1.62 1.62c-.24.43-.45.89-.6 1.38H26c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2.31c.14.46.33.89.56 1.3l-1.7 1.7a.996.996 0 0 0 0 1.41l1.41 1.41c.39.39 1.02.39 1.41 0l1.7-1.7c.41.22.84.41 1.3.55v2.33c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.33c.48-.14.94-.35 1.37-.59l1.63 1.63c.37.37.98.37 1.36 0l1.36-1.36c.37-.38.37-.98 0-1.36l-1.62-1.62c.24-.43.45-.89.6-1.38H44c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-9 6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" id="toggles-m"></path>
+              <mask id="toggles-Y" x="0" y="0" width="20" height="20.01" fill="#fff">
+                  <use xlink:href="#toggles-m"></use>
+              </mask>
+              <path d="M43 70.99c-.53 0-1.01.21-1.37.55l-4.72-2.95c.06-.19.1-.39.1-.6 0-.21-.04-.41-.1-.6l4.72-2.95c.36.34.84.55 1.37.55 1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2c0 .21.04.41.1.6l-4.73 2.96c-.24-.23-.54-.4-.87-.48v-4.14c.86-.22 1.5-1 1.5-1.93 0-1.1-.9-2-2-2s-2 .9-2 2c0 .93.64 1.71 1.5 1.93v4.14c-.33.09-.63.26-.87.48l-4.73-2.96c.06-.19.1-.39.1-.6 0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2c.53 0 1.01-.21 1.37-.55l4.72 2.95c-.06.19-.1.39-.1.6 0 .21.04.41.1.6l-4.72 2.95c-.36-.34-.84-.55-1.37-.55-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2c0-.21-.04-.41-.1-.6l4.73-2.96c.24.23.54.4.87.48v4.14c-.86.22-1.5 1-1.5 1.93 0 1.1.9 2 2 2s2-.9 2-2c0-.93-.64-1.71-1.5-1.93v-4.14c.33-.09.63-.26.87-.48l4.73 2.96c-.06.19-.1.39-.1.6 0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2z" id="toggles-n"></path>
+              <mask id="toggles-Z" x="0" y="0" width="20" height="19.98" fill="#fff">
+                  <use xlink:href="#toggles-n"></use>
+              </mask>
+              <path d="M43.3 106c-.2-.9-.6-1.7-1.1-2.5.2-.3.3-.7.3-1 0-1.1-.9-2-2-2-.4 0-.7.1-1 .3-.8-.5-1.6-.8-2.5-1.1-.1-1-1-1.7-2-1.7s-1.8.8-2 1.7c-.9.3-1.7.6-2.5 1.1-.3-.2-.7-.3-1-.3-1.1 0-2 .9-2 2 0 .4.1.7.3 1-.5.8-.8 1.6-1.1 2.5-.9.2-1.7 1-1.7 2s.8 1.8 1.7 2c.2.9.6 1.7 1.1 2.5-.2.3-.3.7-.3 1 0 1.1.9 2 2 2 .4 0 .7-.1 1-.3.8.5 1.6.8 2.5 1.1.1 1 1 1.7 2 1.7s1.8-.8 2-1.7c.9-.2 1.7-.6 2.5-1.1.3.2.7.3 1 .3 1.1 0 2-.9 2-2 0-.4-.1-.7-.3-1 .5-.8.8-1.6 1.1-2.5 1-.1 1.7-1 1.7-2s-.8-1.8-1.7-2zm-1.8 5.8c-.3-.2-.6-.3-1-.3-1.1 0-2 .9-2 2 0 .4.1.7.3 1-.6.3-1.2.6-1.9.8-.3-.7-1-1.3-1.9-1.3-.8 0-1.6.5-1.9 1.3-.7-.2-1.3-.4-1.9-.8.2-.3.3-.6.3-1 0-1.1-.9-2-2-2-.4 0-.7.1-1 .3-.3-.6-.6-1.2-.8-1.9.8-.3 1.3-1.1 1.3-1.9 0-.8-.5-1.6-1.2-1.8.2-.7.4-1.3.8-1.9.3.2.6.3 1 .3 1.1 0 2-.9 2-2 0-.4-.1-.7-.3-1 .6-.3 1.2-.6 1.9-.8.2.7 1 1.2 1.8 1.2s1.6-.5 1.9-1.3c.7.2 1.3.4 1.9.8-.2.3-.3.6-.3 1 0 1.1.9 2 2 2 .4 0 .7-.1 1-.3.3.6.6 1.2.8 1.9-.8.3-1.3 1.1-1.3 1.9 0 .8.5 1.6 1.2 1.8-.1.7-.4 1.4-.7 2z" id="toggles-o"></path>
+              <mask id="toggles-aa" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-o"></use>
+              </mask>
+              <path d="M27 146c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm16-12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-16-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm8 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-8-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" id="toggles-p"></path>
+              <mask id="toggles-ab" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-p"></use>
+              </mask>
+              <path d="M27 178c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm16-12c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-16 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm16 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-8 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" id="toggles-q"></path>
+              <mask id="toggles-ac" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-q"></use>
+              </mask>
+              <path d="M43.5 234.07v-4.14c.86-.22 1.5-1 1.5-1.93 0-1.1-.9-2-2-2-.93 0-1.71.64-1.93 1.5h-4.14c-.18-.7-.73-1.25-1.43-1.43v-4.14c.86-.22 1.5-1 1.5-1.93 0-1.1-.9-2-2-2s-2 .9-2 2c0 .93.64 1.71 1.5 1.93v4.14c-.7.18-1.25.73-1.43 1.43h-4.14c-.22-.86-1-1.5-1.93-1.5-1.1 0-2 .9-2 2 0 .93.64 1.71 1.5 1.93v4.14c-.86.22-1.5 1-1.5 1.93 0 1.1.9 2 2 2s2-.9 2-2c0-.93-.64-1.71-1.5-1.93v-4.14c.7-.18 1.25-.73 1.43-1.43h4.14c.18.7.73 1.25 1.43 1.43v4.14c-.86.22-1.5 1-1.5 1.93 0 1.1.9 2 2 2s2-.9 2-2c0-.93-.64-1.71-1.5-1.93v-4.14c.7-.18 1.25-.73 1.43-1.43h4.14c.18.7.73 1.25 1.43 1.43v4.14c-.86.22-1.5 1-1.5 1.93 0 1.1.9 2 2 2s2-.9 2-2c0-.93-.64-1.71-1.5-1.93z" id="toggles-r"></path>
+              <mask id="toggles-ad" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-r"></use>
+              </mask>
+              <path d="M27 272c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm16 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-16 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm11 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm5-4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-5-12c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" id="toggles-s"></path>
+              <mask id="toggles-ae" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-s"></use>
+              </mask>
+              <path d="M42.5 306a2.5 2.5 0 0 0-2.45 2h-2.1a2.5 2.5 0 0 0-4.9 0h-2.1a2.5 2.5 0 1 0 0 1h2.1a2.5 2.5 0 0 0 4.9 0h2.1a2.5 2.5 0 1 0 2.45-3z" id="toggles-t"></path>
+              <mask id="toggles-af" x="0" y="0" width="19" height="5" fill="#fff">
+                  <use xlink:href="#toggles-t"></use>
+              </mask>
+              <path d="M43.816 40H188.01a3.002 3.002 0 0 1 2.99 2.996v127.008a2.991 2.991 0 0 1-2.99 2.996H12.99a3.002 3.002 0 0 1-2.99-2.996V42.996A2.991 2.991 0 0 1 12.99 40h13.194c.05-.05.099-.1.144-.15l7.344-8.246c.733-.823 1.924-.822 2.656 0l7.344 8.245c.045.051.094.101.144.151z" id="toggles-u"></path>
+              <mask id="toggles-ag" x="0" y="0" width="181" height="142.013" fill="#fff">
+                  <use xlink:href="#toggles-u"></use>
+              </mask>
+              <path id="toggles-v" d="M25 54.977h20v20H25z"></path>
+              <mask id="toggles-ah" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-v"></use>
+              </mask>
+              <path id="toggles-w" d="M25 94.977h20v20H25z"></path>
+              <mask id="toggles-ai" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-w"></use>
+              </mask>
+              <path id="toggles-x" d="M25 134.977h20v20H25z"></path>
+              <mask id="toggles-aj" x="0" y="0" width="20" height="20" fill="#fff">
+                  <use xlink:href="#toggles-x"></use>
+              </mask>
+              <circle id="toggles-y" cx="11" cy="41" r="5"></circle>
+              <mask id="toggles-ak" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-y"></use>
+              </mask>
+              <circle id="toggles-z" cx="190" cy="41" r="5"></circle>
+              <mask id="toggles-al" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-z"></use>
+              </mask>
+              <circle id="toggles-A" cx="190" cy="172" r="5"></circle>
+              <mask id="toggles-am" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-A"></use>
+              </mask>
+              <circle id="toggles-B" cx="10" cy="172" r="5"></circle>
+              <mask id="toggles-an" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-B"></use>
+              </mask>
+              <path d="M44 8h-2.31c-.14-.46-.33-.89-.56-1.3l1.7-1.7a.996.996 0 0 0 0-1.41l-1.41-1.41a.996.996 0 0 0-1.41 0l-1.7 1.7c-.41-.22-.84-.41-1.3-.55V1c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v2.33c-.48.14-.94.35-1.37.59l-1.63-1.63a.972.972 0 0 0-1.36 0l-1.36 1.36c-.37.38-.37.98 0 1.36l1.62 1.62c-.24.43-.45.89-.6 1.38H26c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2.31c.14.46.33.89.56 1.3l-1.7 1.7a.996.996 0 0 0 0 1.41l1.41 1.41c.39.39 1.02.39 1.41 0l1.7-1.7c.41.22.84.41 1.3.55v2.33c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.33c.48-.14.94-.35 1.37-.59l1.63 1.63c.37.37.98.37 1.36 0l1.36-1.36c.37-.38.37-.98 0-1.36l-1.62-1.62c.24-.43.45-.89.6-1.38H44c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-9 6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" id="toggles-C"></path>
+              <mask id="toggles-ao" x="0" y="0" width="20" height="20.01" fill="#fff">
+                  <use xlink:href="#toggles-C"></use>
+              </mask>
+              <path d="M43.816 40H188.01a3.005 3.005 0 0 1 2.99 3v98.998a2.998 2.998 0 0 1-2.99 3H12.99a3.005 3.005 0 0 1-2.99-3V43a2.998 2.998 0 0 1 2.99-3h13.194c.05-.05.099-.1.144-.15l7.344-8.246c.733-.823 1.924-.822 2.656 0l7.344 8.245c.045.051.094.101.144.15z" id="toggles-D"></path>
+              <mask id="toggles-ap" x="0" y="0" width="181" height="114.013" fill="#fff">
+                  <use xlink:href="#toggles-D"></use>
+              </mask>
+              <path id="toggles-E" d="M25 54.977h16v16H25z"></path>
+              <mask id="toggles-aq" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-E"></use>
+              </mask>
+              <path id="toggles-F" d="M25 84.977h16v16H25z"></path>
+              <mask id="toggles-ar" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-F"></use>
+              </mask>
+              <path id="toggles-G" d="M25 114.977h16v16H25z"></path>
+              <mask id="toggles-as" x="0" y="0" width="16" height="16" fill="#fff">
+                  <use xlink:href="#toggles-G"></use>
+              </mask>
+              <circle id="toggles-H" cx="11" cy="41" r="5"></circle>
+              <mask id="toggles-at" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-H"></use>
+              </mask>
+              <circle id="toggles-I" cx="190" cy="41" r="5"></circle>
+              <mask id="toggles-au" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-I"></use>
+              </mask>
+              <circle id="toggles-J" cx="190" cy="144" r="5"></circle>
+              <mask id="toggles-av" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-J"></use>
+              </mask>
+              <circle id="toggles-K" cx="11" cy="144" r="5"></circle>
+              <mask id="toggles-aw" x="0" y="0" width="10" height="10" fill="#fff">
+                  <use xlink:href="#toggles-K"></use>
+              </mask>
+              <path d="M44 8h-2.31c-.14-.46-.33-.89-.56-1.3l1.7-1.7a.996.996 0 0 0 0-1.41l-1.41-1.41a.996.996 0 0 0-1.41 0l-1.7 1.7c-.41-.22-.84-.41-1.3-.55V1c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v2.33c-.48.14-.94.35-1.37.59l-1.63-1.63a.972.972 0 0 0-1.36 0l-1.36 1.36c-.37.38-.37.98 0 1.36l1.62 1.62c-.24.43-.45.89-.6 1.38H26c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1h2.31c.14.46.33.89.56 1.3l-1.7 1.7a.996.996 0 0 0 0 1.41l1.41 1.41c.39.39 1.02.39 1.41 0l1.7-1.7c.41.22.84.41 1.3.55v2.33c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-2.33c.48-.14.94-.35 1.37-.59l1.63 1.63c.37.37.98.37 1.36 0l1.36-1.36c.37-.38.37-.98 0-1.36l-1.62-1.62c.24-.43.45-.89.6-1.38H44c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-9 6c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" id="toggles-L"></path>
+              <mask id="toggles-ax" x="0" y="0" width="20" height="20.01" fill="#fff">
+                  <use xlink:href="#toggles-L"></use>
+              </mask>
+          </defs>
+          <g fill="none" fill-rule="evenodd" opacity=".1">
+              <g stroke="#FFF">
+                  <g>
+                      <g>
+                          <g>
+                              <use mask="url(#toggles-M)" stroke-width="4" opacity=".4" xlink:href="#toggles-a"></use>
+                              <path d="M11 34v312M220 34v312M0 334h230M0 41h230" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#toggles-N)" stroke-width="2" opacity=".4" xlink:href="#toggles-b"></use>
+                              <use mask="url(#toggles-O)" stroke-width="2" opacity=".4" xlink:href="#toggles-c"></use>
+                              <use mask="url(#toggles-P)" stroke-width="2" opacity=".4" xlink:href="#toggles-d"></use>
+                              <use mask="url(#toggles-Q)" stroke-width="2" opacity=".4" xlink:href="#toggles-e"></use>
+                              <use mask="url(#toggles-R)" stroke-width="4" xlink:href="#toggles-f"></use>
+                              <use mask="url(#toggles-S)" stroke-width="4" xlink:href="#toggles-g"></use>
+                              <use mask="url(#toggles-T)" stroke-width="4" xlink:href="#toggles-h"></use>
+                              <use mask="url(#toggles-U)" stroke-width="4" xlink:href="#toggles-i"></use>
+                              <use mask="url(#toggles-V)" stroke-width="4" xlink:href="#toggles-j"></use>
+                              <use mask="url(#toggles-W)" stroke-width="4" xlink:href="#toggles-k"></use>
+                              <use mask="url(#toggles-X)" stroke-width="4" xlink:href="#toggles-l"></use>
+                              <path d="M62.5 68.5H92m-29.5 40H116m-53.5 40H89m-26.5 40H131m-68.5 40H127m-64.5 40H123m-60.5 40H104" stroke-width="3" stroke-linecap="square"></path>
+                              <use mask="url(#toggles-Y)" stroke-width="4" xlink:href="#toggles-m"></use>
+                              <use mask="url(#toggles-Z)" stroke-width="4" xlink:href="#toggles-n"></use>
+                              <use mask="url(#toggles-aa)" stroke-width="4" xlink:href="#toggles-o"></use>
+                              <use mask="url(#toggles-ab)" stroke-width="4" xlink:href="#toggles-p"></use>
+                              <use mask="url(#toggles-ac)" stroke-width="4" xlink:href="#toggles-q"></use>
+                              <use mask="url(#toggles-ad)" stroke-width="4" xlink:href="#toggles-r"></use>
+                              <use mask="url(#toggles-ae)" stroke-width="4" xlink:href="#toggles-s"></use>
+                              <use mask="url(#toggles-af)" stroke-width="4" xlink:href="#toggles-t"></use>
+                          </g>
+                          <g transform="translate(250)">
+                              <use mask="url(#toggles-ag)" stroke-width="4" opacity=".4" xlink:href="#toggles-u"></use>
+                              <use mask="url(#toggles-ah)" stroke-width="4" xlink:href="#toggles-v"></use>
+                              <use mask="url(#toggles-ai)" stroke-width="4" xlink:href="#toggles-w"></use>
+                              <use mask="url(#toggles-aj)" stroke-width="4" xlink:href="#toggles-x"></use>
+                              <path d="M11 34v146M190 34v146M0 172h200M0 41h200" stroke-opacity=".5" stroke-width="2"></path>
+                              <path d="M56.5 64.5H86m-29.5 40H86m-29.5 40H86" stroke-width="3" stroke-linecap="square"></path>
+                              <use mask="url(#toggles-ak)" stroke-width="2" opacity=".4" xlink:href="#toggles-y"></use>
+                              <use mask="url(#toggles-al)" stroke-width="2" opacity=".4" xlink:href="#toggles-z"></use>
+                              <use mask="url(#toggles-am)" stroke-width="2" opacity=".4" xlink:href="#toggles-A"></use>
+                              <use mask="url(#toggles-an)" stroke-width="2" opacity=".4" xlink:href="#toggles-B"></use>
+                              <use mask="url(#toggles-ao)" stroke-width="4" xlink:href="#toggles-C"></use>
+                          </g>
+                          <g transform="translate(250 190)">
+                              <use mask="url(#toggles-ap)" stroke-width="4" opacity=".4" xlink:href="#toggles-D"></use>
+                              <use mask="url(#toggles-aq)" stroke-width="4" xlink:href="#toggles-E"></use>
+                              <use mask="url(#toggles-ar)" stroke-width="4" xlink:href="#toggles-F"></use>
+                              <use mask="url(#toggles-as)" stroke-width="4" xlink:href="#toggles-G"></use>
+                              <path d="M11 34v119M190 34v120M0 144h200M0 41h200" stroke-opacity=".5" stroke-width="2"></path>
+                              <use mask="url(#toggles-at)" stroke-width="2" opacity=".4" xlink:href="#toggles-H"></use>
+                              <use mask="url(#toggles-au)" stroke-width="2" opacity=".4" xlink:href="#toggles-I"></use>
+                              <use mask="url(#toggles-av)" stroke-width="2" opacity=".4" xlink:href="#toggles-J"></use>
+                              <use mask="url(#toggles-aw)" stroke-width="2" opacity=".4" xlink:href="#toggles-K"></use>
+                              <path d="M52.5 62.5H82m-29.5 30H82m-29.5 30H82" stroke-width="3" stroke-linecap="square"></path>
+                              <use mask="url(#toggles-ax)" stroke-width="4" xlink:href="#toggles-L"></use>
+                          </g>
+                      </g>
+                  </g>
+              </g>
+          </g>
+      </svg>
+      </div></div>
+
+ 
+ <svg id="circle-animated" style="position:absolute;top:-30%;opacity:0.7;height:150%;width:150%;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 406.2 406.2" xml:space="preserve">
+ <style type="text/css">
+     .st0{fill:#FFFFFF;}
+     .st1{fill:#fff;stroke:#fff;stroke-miterlimit:10;}
+ </style>
+ <path class="st0 lRCOriTA_0" d="M-717.6,131.2L-717.6,347.5L-634.1,347.5L-634.1,258L-570.2,321.9L-570.2,202.7L-641.7,131.3Z"></path>
+ <path class="st0 lRCOriTA_1" d="M-422.4,131.2L-422.4,347.5L-505.9,347.5L-505.9,258L-569.9,321.9L-569.9,202.7L-498.5,131.3Z"></path>
+ <path class="st0 lRCOriTA_2" d="M-611.7,310.4L-611.7,369.5L-717.6,369.5L-717.6,411.5L-570.2,411.5L-570.2,351.6Z"></path>
+ <path class="st0 lRCOriTA_3" d="M-528.7,310.4L-528.7,369.5L-422.7,369.5L-422.7,411.5L-570.2,411.5L-570.2,351.6Z"></path>
+ <path class="st0 lRCOriTA_4" width="142" height="7.7" d="M-916.4 403.7 L-774.4 403.7 L-774.4 411.4 L-916.4 411.4 Z"></path>
+ <path class="st0 lRCOriTA_5" width="142" height="7.7" d="M-365.8 403.7 L-223.8 403.7 L-223.8 411.4 L-365.8 411.4 Z"></path>
+ <path class="st0 lRCOriTA_6" d="M-593.5,84.6c0-12.8,10.3-23.2,23.1-23.4V-2.1l-71.3,71.4h-76.1v39.9h85.3l62.1,62.1V108
+     C-583.2,107.8-593.5,97.4-593.5,84.6z"></path>
+ <path class="st0 lRCOriTA_7" d="M-498.6,69.7l-71.6-71.8l-0.1,63.3c0.1,0,0.1,0,0.2,0c12.9,0,23.4,10.5,23.4,23.4s-10.5,23.4-23.4,23.4
+     c-0.1,0-0.2,0-0.2,0l-0.1,63.3l62.2-62.2h85.8V69.7H-498.6z"></path>
+ <path class="st1 lRCOriTA_8" d="M203.1,63.4L203.1,202.3"></path>
+ <path class="st1 lRCOriTA_9" d="M203.1,342.3L203.1,203.3"></path>
+ <path class="st1 lRCOriTA_10" d="M104.2,31.8L203,203.1"></path>
+ <path class="st1 lRCOriTA_11" d="M5.3,203.1L203,203.1"></path>
+ <path class="st1 lRCOriTA_12" d="M104.2,374.4L203,203.1"></path>
+ <path class="st1 lRCOriTA_13" d="M302,374.4L203,203.1"></path>
+ <path class="st1 lRCOriTA_14" d="M400.9,203.1L203,203.1"></path>
+ <path class="st1 lRCOriTA_15" d="M302,31.8L203,203.1"></path>
+ <path class="st1 lRCOriTA_16" d="M315.8,285.7L204,203.3"></path>
+ <path class="st1 lRCOriTA_17" d="M78.5,265.3L202.9,203.5"></path>
+ <path class="st1 lRCOriTA_18" d="M83.1,134.4L203.3,204"></path>
+ <path class="st1 lRCOriTA_19" d="M330.9,151.3L202.1,203.3"></path>
+ <style data-made-with="vivus-instant">.lRCOriTA_0{stroke-dasharray:776 778;stroke-dashoffset:777;animation:lRCOriTA_draw 666ms ease-in 0ms forwards;}.lRCOriTA_1{stroke-dasharray:777 779;stroke-dashoffset:778;animation:lRCOriTA_draw 666ms ease-in 17ms forwards;}.lRCOriTA_2{stroke-dasharray:473 475;stroke-dashoffset:474;animation:lRCOriTA_draw 666ms ease-in 35ms forwards;}.lRCOriTA_3{stroke-dasharray:473 475;stroke-dashoffset:474;animation:lRCOriTA_draw 666ms ease-in 52ms forwards;}.lRCOriTA_4{stroke-dasharray:300 302;stroke-dashoffset:301;animation:lRCOriTA_draw 666ms ease-in 70ms forwards;}.lRCOriTA_5{stroke-dasharray:300 302;stroke-dashoffset:301;animation:lRCOriTA_draw 666ms ease-in 87ms forwards;}.lRCOriTA_6{stroke-dasharray:590 592;stroke-dashoffset:591;animation:lRCOriTA_draw 666ms ease-in 105ms forwards;}.lRCOriTA_7{stroke-dasharray:592 594;stroke-dashoffset:593;animation:lRCOriTA_draw 666ms ease-in 122ms forwards;}.lRCOriTA_8{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 140ms forwards;}.lRCOriTA_9{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 157ms forwards;}.lRCOriTA_10{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 175ms forwards;}.lRCOriTA_11{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 192ms forwards;}.lRCOriTA_12{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 210ms forwards;}.lRCOriTA_13{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 228ms forwards;}.lRCOriTA_14{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 245ms forwards;}.lRCOriTA_15{stroke-dasharray:198 200;stroke-dashoffset:199;animation:lRCOriTA_draw 666ms ease-in 263ms forwards;}.lRCOriTA_16{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 280ms forwards;}.lRCOriTA_17{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 298ms forwards;}.lRCOriTA_18{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 315ms forwards;}.lRCOriTA_19{stroke-dasharray:139 141;stroke-dashoffset:140;animation:lRCOriTA_draw 666ms ease-in 333ms forwards;}@keyframes lRCOriTA_draw{100%{stroke-dashoffset:0;}}@keyframes lRCOriTA_fade{0%{stroke-opacity:1;}100%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+ 
+        
+
+
+
+
+        <a target="_blank" id="logo-grande-link" href="https://linkedin.com/in/marcelo-larrosa/">
+          
+          <img id="logo-unido" src="images/logo-blanco-sin-texto-unido.svg" style="position: absolute;" alt="">
+
+          <svg style="margin-top:0;" version="1.1" id="logo-svg-animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 715.1 428" xml:space="preserve">
+          <style type="text/css">
+          .st0{fill:transparent;stroke:#fff;stroke-miterlimit:10;}
+          </style>
+          <path class="st0 PwIhgDwL_0" d="M204.4,140L204.4,356.3L287.9,356.3L287.9,266.8L351.8,330.7L351.8,211.5L280.3,140.1Z"></path>
+          <path class="st0 PwIhgDwL_1" d="M499.6,140L499.6,356.3L416.1,356.3L416.1,266.8L352.1,330.7L352.1,211.5L423.5,140.1Z"></path>
+          <path class="st0 PwIhgDwL_2" d="M310.3,319.2L310.3,378.3L204.4,378.3L204.4,420.3L351.8,420.3L351.8,360.4Z"></path>
+          <path class="st0 PwIhgDwL_3" d="M393.3,319.2L393.3,378.3L499.3,378.3L499.3,420.3L351.8,420.3L351.8,360.4Z"></path>
+          <path class="st0 PwIhgDwL_4" width="142" height="7.7" d="M5.6 412.5 L147.6 412.5 L147.6 420.2 L5.6 420.2 Z"></path>
+          <path class="st0 PwIhgDwL_5" width="142" height="7.7" d="M556.2 412.5 L698.2 412.5 L698.2 420.2 L556.2 420.2 Z"></path>
+          <path class="st0 PwIhgDwL_6" d="M328.5,93.4c0-12.8,10.3-23.2,23.1-23.4V6.7l-71.3,71.4h-76.1V118h85.3l62.1,62.1v-63.3
+          C338.8,116.6,328.5,106.2,328.5,93.4z"></path>
+          <path class="st0 PwIhgDwL_7" d="M423.4,78.5L351.8,6.7L351.7,70c0.1,0,0.1,0,0.2,0c12.9,0,23.4,10.5,23.4,23.4c0,12.9-10.5,23.4-23.4,23.4
+          c-0.1,0-0.2,0-0.2,0l-0.1,63.3l62.2-62.2h85.8V78.5H423.4z"></path>
+          <style data-made-with="vivus-instant">.PwIhgDwL_0{stroke-dasharray:776 778;stroke-dashoffset:777;animation:PwIhgDwL_draw_0 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_1{stroke-dasharray:777 779;stroke-dashoffset:778;animation:PwIhgDwL_draw_1 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_2{stroke-dasharray:473 475;stroke-dashoffset:474;animation:PwIhgDwL_draw_2 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_3{stroke-dasharray:473 475;stroke-dashoffset:474;animation:PwIhgDwL_draw_3 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_4{stroke-dasharray:300 302;stroke-dashoffset:301;animation:PwIhgDwL_draw_4 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_5{stroke-dasharray:300 302;stroke-dashoffset:301;animation:PwIhgDwL_draw_5 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_6{stroke-dasharray:590 592;stroke-dashoffset:591;animation:PwIhgDwL_draw_6 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}.PwIhgDwL_7{stroke-dasharray:592 594;stroke-dashoffset:593;animation:PwIhgDwL_draw_7 5400ms ease-in-out 0ms,PwIhgDwL_fade 5400ms ease-in-out 0ms;animation-delay: 700ms;}@keyframes PwIhgDwL_draw{100%{stroke-dashoffset:0;}}@keyframes PwIhgDwL_fade{0%{stroke-opacity:1;}92.5925925925926%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes PwIhgDwL_draw_0{0%{stroke-dashoffset: 777}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_1{0%{stroke-dashoffset: 778}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_2{0%{stroke-dashoffset: 474}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_3{0%{stroke-dashoffset: 474}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_4{0%{stroke-dashoffset: 301}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_5{0%{stroke-dashoffset: 301}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_6{0%{stroke-dashoffset: 591}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes PwIhgDwL_draw_7{0%{stroke-dashoffset: 593}37.03703703703704%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>
+
+          <p id="ml-web-developer" style="margin-top:-70px;display:block;opacity:0;line-height:1;margin-top:-20px;width:100%;font-size:60px;font-family:'Forque';text-decoration:none;color:#fff;">Marcelo Larrosa<br/> Web Developer</p>
+
+        </a>
+    </div>
+			<!-- END .header -->
+			
+			<div id="portfolio-main">
+				<div id="experience-logos">
+					<div class="container">
+						<div class="row">
+							<div class="columns col-md-4 col-sm-6 col-xs-6">
+								<figure class="portfolio-client"><img src="images/suitedb-logo-blanco.svg"></figure>
+							</div>
+							<div class="columns col-md-4 col-sm-6 col-xs-6">
+								<figure class="portfolio-client"><img src="images/tt-logo.svg"></figure>
+							</div>
+							<div class="columns col-md-4 col-sm-6 col-xs-6">
+								<figure class="portfolio-client">
+									<img src="images/solcre-logo.svg">
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				<div id="about-me">
+					<section class="my-5 py-5 section section-no-border section-parallax bg-transparent custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/resume/about-me/about-me-bg-1.jpg">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-3 position-relative custom-sm-margin-bottom-1">
+									<img src="foto-io.jpg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
+								</div>
+								<div class="col-lg-6 col-xl-5">
+									<h1 class="text-color-primary custom-font-size-1 mb-0">Marcelo Larrosa</h1>
+									<span class="custom-about-me-infos">
+										<span class="custom-text-color-1 mt-3 mb-2">
+										    Cuento con más de 7 años de experiencia como <strong>desarrollador web frontend.</strong>
+										    Durante este tiempo, he adquirido una amplia gama de habilidades trabajando con diferentes tipos de sitios web y tecnologías, 
+                        desde sitios estáticos pequeños y medianos hasta sitios web de comercio electrónico muy grandes y complejos con contenido dinámico.
+									    </span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					
+				</div>
+					
+
+				<div class="portfolio-project" data-section="projects">
+				    <div class="container">
+						<div class="row">
+							<div class="col-md-12 portfolio-section-heading text-center">
+								<h2 class="portfolio-lead animated section-title">Experiencia</h2>
+							</div>
+				    	</div>
+				    </div>
+				</div>		
+
+			    <!-- ======= Resume Section ======= -->
+			    <section id="resume" class="resume">
+			      <div class="container">
+
+
+			        <div class="row">
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Activo <span> - 9 meses (Ene 2022 - Sep 2022)</span></h3>
+			            <div class="resume-item">
+			              <h5><em>Desarrollador Wordpress</em></h5>
+			              <ul>
+			                <p>
+			                  Desarrollo de páginas de destino para promocionar el sitio web, los servicios y las ofertas de la empresa. Creación de contenido fácilmente editable mediante Elementor, códigos cortos personalizados y campos personalizados avanzados.
+			                </p>
+			              </ul>
+			            </div>
+			          </div>
+			            
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Muustack <span> - 7 meses (Jul 2021 - Ene 2022)</span></h3>
+			            <div class="resume-item">
+			              <h5><em>Wordpress Developer</em></h5>
+			              <ul>
+			                <p>
+			                  Desarrollo de sitios web personalizados en WordPress para clientes, creando el tema desde cero con HTML, CSS, PHP, Bootstrap y JavaScript. Permitimos que el contenido sea dinámico mediante tipos de publicación personalizados y campos personalizados avanzados.
+			                </p>
+			              </ul>
+			            </div>
+			          </div>
+			            
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">SuiteDB <span> - 8 meses (Feb 2020 - Oct 2020)</span></h3>
+			            <div class="resume-item">
+			              <h5><em>Desarrollador Ecommerce Oracle NetSuite</em></h5>
+			              <ul>
+			                <p>
+			                  SuiteDB es una empresa que también trabaja con NetSuite; mis tareas se centraron en el desarrollo de sitios web utilizando la tecnología SuiteCommerce Advanced de NetSuite, así como en la ejecución, optimización y despliegue de los sitios utilizando Gulp y NPM.
+			                </p>
+			              </ul>
+			            </div>
+			          </div>
+			            
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Tavano Team <span> - 4 años (2015 - 2019)</span></h3>
+			            <div class="resume-item">
+			              <h5><em>Desarrollador Ecommerce Oracle NetSuite</em></h5>
+			              <ul>
+			                <p>
+                        Trabajar en el equipo de Tavano fue una experiencia excelente que me impulsó a llevar mis conocimientos 
+                        y habilidades de diseño web al siguiente nivel. Tuve la increíble oportunidad de aprender NetSuite, una 
+                        de las plataformas CRM más importantes del mercado de comercio electrónico a nivel mundial.
+			                </p>
+			                <li>Implementar un nuevo tema (plantilla) dentro de NetSuite que se utilizará para rediseñar todo el 
+                        sitio web, mientras que el actual permanecerá publicado sin sufrir cambios no deseados. </li>
+			                <li>Modificar todos los estilos del sitio web, basándose en las pautas estéticas definidas por el cliente. </li>
+			                <li>Investigar las funcionalidades e integrarlas en NetSuite para que funcionen correctamente junto con 
+                        las funcionalidades existentes y el código predeterminado de NetSuite.</li>
+			                <li>Crear y/o modificar, según sea el caso, elementos de diseño (modificar logotipo, banners, 
+                        sliders, imágenes, secciones) siguiendo las mismas pautas estéticas ya presentes en la imagen 
+                        corporativa de la empresa, y cambiarlas por otras, mientras el sitio esté en producción. </li>
+			                <li>Escribir scripts sencillos para el frontend de manera que la estructura visual se mantenga 
+                        independientemente del contenido que se cargue en el backend de NetSuite.</li>
+			              </ul>
+			            </div>
+			          </div>
+			          
+			          <div class="columns col-lg-9" data-aos="fade-up">
+			            <h3 class="resume-title">Solcre Technology Solutions <span> - 2 años (2013 - 2014)</span></h3>
+			            <div class="resume-item">
+			              <h5><em>Frontend Developer</em></h5>
+			              <ul>
+			                <li>Validación de código HTML y CSS y detección de errores.</li>
+			                <li>Utilizar plantillas para crear sitios web según las necesidades del cliente. 
+                        Utilizar el CMS desarrollado por la empresa Columnis.</li>
+			                <li>Programación básica con Javascript y jQuery. Depuración de errores en scripts. </li>
+			              </ul>
+			            </div>
+			          </div>
+			        </div>
+
+			      </div>
+			    </section><!-- End Resume Section -->
+
+
+
+				<div class="portfolio-project" data-section="projects">
+				    <div class="container">
+						<div class="row">
+							<div class="col-md-12 portfolio-section-heading text-center">
+								<h2 class="portfolio-lead animated section-title">Plantillas Web</h2>
+							</div>
+			        	</div>
+				    </div>
+				</div>
+
+  
+        <div id="filtro-plantillas" class="main showcase-page">
+          <section class="module-medium" id="demos">
+            <div class="container">
+
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img style="width:100%;" src="" alt="Main Demo">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Generales</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="dentistas-tab" data-toggle="pill" data-target="#dentistas" type="button" role="tab" aria-controls="dentistas" aria-selected="true">Dentistas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contadores-tab" data-toggle="pill" data-target="#contadores" type="button" role="tab" aria-controls="contadores" aria-selected="false">Contadores</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="abogados-tab" data-toggle="pill" data-target="#abogados" type="button" role="tab" aria-controls="abogados" aria-selected="false">Abogados</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://mlarrosa.github.io/restaurant-imgs-hq/coffee.png">
+                        <div class="content-box-image">
+                          <img src="https://mlarrosa.github.io/restaurant-imgs-hq/coffee.png">
+                        </div>
+                      </a>
+                    </div>              
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/f9813793e54d63026ad345b161790d4ceb75e9d6/koppee.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/f9813793e54d63026ad345b161790d4ceb75e9d6/koppee.png?raw=true">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/5721320cec82ce1f7010c02427a222b9eb15f691/coffeeblend1.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/5721320cec82ce1f7010c02427a222b9eb15f691/coffeeblend1.png?raw=true">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                -->
+                <div class="tab-pane fade show active" id="dentistas" role="tabpanel" aria-labelledby="dentistas-tab">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="images/dentist-02.png">
+                        <div class="content-box-image">
+                          <img src="images/dentist-02.png" alt="Main Demo">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="images/dental-02.png">
+                        <div class="content-box-image">
+                          <img src="images/dental-02.png" alt="Main Demo">
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="images/dentista-health-wellness-02.png">
+                        <div class="content-box-image">
+                          <img src="images/dentista-health-wellness-02.png" alt="Main Demo">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!--
+                <div class="tab-pane fade" id="contadores" role="tabpanel" aria-labelledby="contadores-tab">
+                  <div class="row">     
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://mlarrosa.github.io/restaurant-imgs-hq/burger.png">
+                        <div class="content-box-image">
+                          <img src="https://mlarrosa.github.io/restaurant-imgs-hq/burger.png">
+                        </div>
+                      </a>
+                    </div>  
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://mlarrosa.github.io/restaurant-imgs-hq/feane.png">
+                        <div class="content-box-image">
+                          <img src="https://mlarrosa.github.io/restaurant-imgs-hq/feane.png" alt="Restaurant">
+                        </div>
+                      </a>
+                    </div>      
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://github.com/mlarrosa/restaurant-imgs-hq/blob/9feb1cca3e69d130e57ff91facf09513b462039f/moto.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://github.com/mlarrosa/restaurant-imgs-hq/blob/9feb1cca3e69d130e57ff91facf09513b462039f/moto.png?raw=true">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="abogados" role="tabpanel" aria-labelledby="abogados-tab">
+                  <div class="row">  
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/b9602e576f17641fc28d707735e68af740bb668c/joice.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/b9602e576f17641fc28d707735e68af740bb668c/joice.png?raw=true">
+                        </div>
+                      </a>
+                    </div>  
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://github.com/mlarrosa/restaurant-imgs-hq/blob/main/ice-cream.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://github.com/mlarrosa/restaurant-imgs-hq/blob/main/ice-cream.png?raw=true">
+                        </div>
+                      </a>
+                    </div>   
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <a class="content-box" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/b9602e576f17641fc28d707735e68af740bb668c/fruitkha.png?raw=true">
+                        <div class="content-box-image">
+                          <img src="https://raw.githubusercontent.com/mlarrosa/restaurant-imgs-hq/b9602e576f17641fc28d707735e68af740bb668c/fruitkha.png?raw=true">
+                        </div>
+                      </a>
+                    </div> 
+                  </div>
+                </div>
+                -->
+
+              </div>
+
+            </div>
+          </section>
+        </div>
+        
+			    
+			</div>
+		</div>
+
+
+		<footer id="portfolio-footer" style="">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contáctame!</h2>
+        </div>
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 text-center">
+            <div id="info-map-icons" class="col-lg-2">
+              <div class="col-lg-12">
+                <div class="linkedin icon">
+                  <a href="https://www.linkedin.com/in/marcelo-larrosa" target="_blank"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Contact Section -->
+		</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Particles JS -->
+	<script  src="js/particles-script.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+  <!-- Main JS -->
+
+  
+  
+<script>
+  AOS.init();
+</script>
+
+
+  <script type="text/javascript">
+      $(window).scroll(function(){
+        var scrollHeight = $(window).scrollTop();
+        var logoWidth = $("#logo-grande-link").css("width");
+        $("#logo-grande-link").css("opacity", 1 - scrollHeight / 700).css('width', logoWidth-scrollHeight/2.7+'px');
+    
+        if($(window).scrollTop() > 750) {
+            $("#top-header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $("#top-header").removeClass("active");
+        }
+
+        if ($("#logo-grande-link").css("opacity") <= 0) {
+          $("#logo-grande-link").css("display", "none");
+        } else {
+          $("#logo-grande-link").css("display", "block");
+        }
+      });
+  </script>
+
+
+<script>
+
+jQuery(document).ready(function(){
+    function fillLogo(){
+      jQuery("#logo-svg-animated .st0").css({fill: "#fff", transition: "2.5s"});
+      jQuery("#ml-web-developer").css({transform: "translateY(30px)", transition: "2.5s"});
+      jQuery("#ml-web-developer").css({opacity: "1", transition: "3s"});
+      jQuery("#logo-unido").css({opacity: "1", transition: "4s"});
+      jQuery("#logo-svg-animated").css({opacity: "0", transition: "3s"});
+    };
+    setTimeout(fillLogo, 2000);
+
+
+    function deleteCircle(){
+      jQuery("#circle-animated").css({width: "0", transition: "0.8s"});
+    };
+    setTimeout(deleteCircle, 350);
+});
+</script>
+
+
+    <!-- External JavaScripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+<!-- Magnific Popup core JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+
+    <script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+      var modal = $(this)
+      modal.find('.modal-body').html("<img src='"+recipient+"'/>")
+    })
+    </script>
+
+
+	</body>
+</html>
