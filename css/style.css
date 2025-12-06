@@ -37,7 +37,7 @@ body {
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+  z-index:99999;
 }
 
 .my-float{
@@ -1281,4 +1281,5 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     margin-top:10px;
   }
 }
+
 
