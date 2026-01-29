@@ -44,7 +44,7 @@ position: fixed;
     position: fixed;
     width: 70px;
     height: 70px;
-    bottom: 80px;
+    bottom: 60px;
     left: 30px;
     background-color: #25d366;
     color: #FFF;
@@ -157,8 +157,8 @@ position: fixed;
   
 
 .showcase-page .modal-dialog {
-	width:98%;
-	max-width:98%;
+	width:85%;
+	max-width:85%;
 	margin: 0 auto;
 	margin-top: 130px;
 }
@@ -181,8 +181,8 @@ position: fixed;
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
 	.showcase-page .modal-dialog {
-		width:92%;
-		max-width:92%;
+		width:91%;
+		max-width:91%;
 		margin: 0 auto;
 		margin-top: 140px;
 	}
